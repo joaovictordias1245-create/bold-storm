@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bold Storm | Chuteiras de Futebol</title>
+<meta content="Catálogo bilíngue Bold Storm de chuteiras e acessórios, com atendimento direto pelo WhatsApp." name="description"/>
+<link href="assets/img-001-8962743c6d.jpg" rel="icon" type="image/jpeg"/>
+<!-- Google Fonts & Font Awesome Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            lime: '#F8CD00',       /* Bold Storm yellow */
+                            limeDark: '#D5A900',
+                            dark: '#050505',
+                            darkGray: '#151515',
+                            lightGray: '#F7F5EE',
+                            cardBg: '#ffffff',
+                            accentGreen: '#F8CD00'  /* Bold Storm yellow */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom Athletic Scrollbars & Animations */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333a45;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F8CD00;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .neon-border-hover:hover {
+            border-color: #F8CD00;
+            box-shadow: 0 0 15px rgba(248, 205, 0, 0.22);
+        }
+
+        .badge-pulse {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(248, 205, 0, 0.65); }
+            50% { box-shadow: 0 0 0 10px rgba(248, 205, 0, 0); }
+        }
+
+        /* Marquee horizontal animation for top banner */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 22s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(16, 16, 16, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+
+        /* Bold Storm visual identity: strong contrast, cleaner motion and less artificial effects */
+        :root {
+            --storm-yellow: #F8CD00;
+            --storm-black: #050505;
+            --storm-offwhite: #F7F5EE;
+        }
+        body { background: var(--storm-offwhite); }
+        .storm-logo { filter: drop-shadow(0 8px 16px rgba(0,0,0,.08)); }
+        .storm-category-card {
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 8px 24px rgba(15, 15, 15, .05);
+        }
+        .storm-category-card::after {
+            content: '';
+            position: absolute;
+            inset: auto -20% -55% 36%;
+            height: 120%;
+            background: rgba(248, 205, 0, .12);
+            transform: rotate(-18deg);
+            transition: transform .35s ease, background .35s ease;
+            pointer-events: none;
+        }
+        .storm-category-card:hover::after {
+            transform: rotate(-13deg) translateY(-8px);
+            background: rgba(248, 205, 0, .2);
+        }
+        .storm-category-card > * { position: relative; z-index: 1; }
+        .storm-grid {
+            background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+            background-size: 36px 36px;
+        }
+        .storm-slash { clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%); }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition-duration: .01ms !important; }
+        }
+    
+    :root{--storm-yellow:#F8CD00;--storm-yellow-dark:#D5A900;--storm-black:#050505;--storm-charcoal:#151515;--storm-white:#fff;--storm-offwhite:#F7F5EE}
+    header a:not(.bg-brand-lime),header nav button{color:#fff}
+    header nav a:hover,header nav button:hover{color:var(--storm-yellow)!important}
+    header .storm-logo{box-shadow:0 0 0 1px rgba(248,205,0,.18),0 10px 30px rgba(0,0,0,.35)}
+    #categorias{background:linear-gradient(180deg,#fff 0%,var(--storm-offwhite) 100%)}
+    .storm-category-card{border-color:rgba(5,5,5,.10)}
+    .storm-category-card:hover{border-color:var(--storm-yellow);box-shadow:0 14px 34px rgba(5,5,5,.12);transform:translateY(-2px)}
+    .storm-category-card strong{color:var(--storm-black)}
+    .text-red-600,.text-red-400,.text-amber-600,.text-amber-500,.text-amber-400{color:var(--storm-yellow-dark)!important}
+    .bg-amber-500,.bg-amber-400{background-color:var(--storm-yellow)!important;color:#000!important}
+    .bg-amber-500\/20{background-color:rgba(248,205,0,.15)!important}
+    .border-amber-500\/30,.hover\:border-amber-500\/50:hover{border-color:rgba(248,205,0,.45)!important}
+    #languageToggle[aria-pressed="true"]{background:var(--storm-yellow);color:#000}
+    @media(max-width:639px){#languageToggle{width:42px;padding-left:0;padding-right:0;justify-content:center}#languageToggle i{display:none}}
+    </style>
+<style id="boldstorm-logo-palette-final">
+/* Final visual guard: Bold Storm logo palette only — black, yellow and white. */
+:root{
+    --storm-yellow:#F8CD00;
+    --storm-yellow-dark:#D5A900;
+    --storm-black:#050505;
+    --storm-charcoal:#151515;
+    --storm-white:#FFFFFF;
+    --storm-offwhite:#F7F5EE;
+}
+.text-green-400,.text-green-500,.text-emerald-500,.text-emerald-600{color:var(--storm-yellow-dark)!important}
+.bg-green-500,.bg-green-600,.bg-emerald-500,.bg-emerald-600{background-color:var(--storm-yellow)!important;color:var(--storm-black)!important}
+.hover\:bg-green-500:hover,.hover\:bg-green-600:hover,.hover\:bg-emerald-500:hover,.hover\:bg-emerald-600:hover{background-color:#FFE35A!important;color:var(--storm-black)!important}
+.bg-red-500,.bg-red-600,.bg-amber-400,.bg-amber-500{background-color:var(--storm-yellow)!important;color:var(--storm-black)!important}
+.text-red-400,.text-red-500,.text-red-600,.text-amber-400,.text-amber-500,.text-amber-600{color:var(--storm-yellow-dark)!important}
+#modalWhatsAppBtn,.fixed.bottom-6.right-6 button{background:var(--storm-yellow)!important;color:var(--storm-black)!important;border:1px solid rgba(0,0,0,.18)}
+#modalWhatsAppBtn:hover,.fixed.bottom-6.right-6 button:hover{background:#FFE35A!important}
+.bg-brand-lime i,.bg-brand-lime .fa-whatsapp{color:var(--storm-black)!important}
+</style>
+<style id="boldstorm-pulsing-model-buttons">
+@keyframes stormButtonPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(248,205,0,.55), 0 8px 20px rgba(248,205,0,.28);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.035);
+    box-shadow: 0 0 0 9px rgba(248,205,0,0), 0 10px 30px rgba(248,205,0,.58);
+    filter: brightness(1.14);
+  }
+}
+@keyframes stormButtonShine {
+  0% { transform: translateX(-170%) skewX(-22deg); }
+  42%, 100% { transform: translateX(260%) skewX(-22deg); }
+}
+.storm-model-cta {
+  position: relative !important;
+  isolation: isolate;
+  overflow: hidden !important;
+  background: linear-gradient(105deg,#F8CD00 0%,#FFE86A 48%,#F8CD00 100%) !important;
+  color: #050505 !important;
+  border: 1px solid rgba(255,255,255,.72) !important;
+  box-shadow: 0 8px 22px rgba(248,205,0,.38);
+  animation: stormButtonPulse 1.65s ease-in-out infinite;
+  will-change: transform, box-shadow, filter;
+}
+.storm-model-cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -55%;
+  bottom: -55%;
+  left: -38%;
+  width: 28%;
+  background: linear-gradient(90deg,transparent,rgba(255,255,255,.88),transparent);
+  transform: translateX(-170%) skewX(-22deg);
+  animation: stormButtonShine 2.15s ease-in-out infinite;
+  pointer-events: none;
+}
+.storm-model-cta:hover {
+  background: linear-gradient(105deg,#FFE15A 0%,#FFF4A3 50%,#FFE15A 100%) !important;
+  box-shadow: 0 0 0 4px rgba(248,205,0,.20),0 14px 34px rgba(248,205,0,.60) !important;
+}
+.storm-model-cta:active { transform: scale(.98) !important; }
+.storm-model-cta i { color:#050505 !important; }
+@media (prefers-reduced-motion: reduce) {
+  .storm-model-cta,.storm-model-cta::before { animation:none !important; }
+}
+</style>
+<style id="boldstorm-neon-theme">
+:root{
+  --neon-yellow-rgb:248,205,0;
+  --neon-yellow-soft:rgba(248,205,0,.18);
+  --neon-yellow-mid:rgba(248,205,0,.35);
+  --neon-yellow-strong:rgba(248,205,0,.62);
+  --neon-white:rgba(255,255,255,.88);
+}
+body{
+  background:
+    radial-gradient(circle at 15% 10%, rgba(248,205,0,.08), transparent 24%),
+    radial-gradient(circle at 85% 18%, rgba(248,205,0,.05), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #fffef6 28%, #ffffff 100%);
+}
+header{
+  box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.12), 0 0 18px rgba(var(--neon-yellow-rgb),.08), 0 12px 34px rgba(0,0,0,.22);
+}
+.bg-brand-dark,
+.bg-slate-900,
+.bg-slate-800{
+  box-shadow: inset 0 0 0 1px rgba(var(--neon-yellow-rgb),.08);
+}
+.text-brand-lime,
+.text-brand-limeDark,
+section h1 .text-brand-lime,
+section h2 .text-brand-lime,
+.fa-bolt-lightning,
+.fa-whatsapp,
+.fa-fire,
+.fa-circle-check,
+.fa-headset,
+.fa-ruler,
+.fa-shield-cat,
+.fa-truck-ramp-box{
+  text-shadow: 0 0 6px rgba(var(--neon-yellow-rgb),.38), 0 0 14px rgba(var(--neon-yellow-rgb),.22);
+}
+#inicio h1,
+#inicio h2,
+section h2.font-heading,
+.font-heading.font-black,
+.font-heading.font-extrabold{
+  text-shadow: 0 0 1px rgba(255,255,255,.25), 0 0 14px rgba(var(--neon-yellow-rgb),.10);
+}
+.bg-brand-lime,
+button[class*="bg-brand-lime"],
+a[class*="bg-brand-lime"],
+[class*=" bg-brand-lime"],
+[class^="bg-brand-lime"]{
+  box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.20), 0 0 12px rgba(var(--neon-yellow-rgb),.30), 0 0 28px rgba(var(--neon-yellow-rgb),.18);
+}
+button[class*="bg-brand-lime"],
+a[class*="bg-brand-lime"]{
+  position: relative;
+}
+button[class*="bg-brand-lime"]:hover,
+a[class*="bg-brand-lime"]:hover,
+button[class*="bg-brand-lime"]:focus-visible,
+a[class*="bg-brand-lime"]:focus-visible{
+  box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.38), 0 0 16px rgba(var(--neon-yellow-rgb),.52), 0 0 34px rgba(var(--neon-yellow-rgb),.28);
+}
+#categories-grid > div,
+#productGrid > div,
+.bg-white.rounded-3xl.border,
+.bg-white.rounded-[2rem],
+.bg-white.rounded-2xl,
+.bg-white.rounded-3xl{
+  transition: box-shadow .3s ease, transform .3s ease, border-color .3s ease;
+}
+#productGrid > div,
+.bg-white.rounded-3xl.border{
+  box-shadow: 0 10px 24px rgba(0,0,0,.08), 0 0 0 1px rgba(var(--neon-yellow-rgb),.06);
+}
+#productGrid > div:hover,
+.bg-white.rounded-3xl.border:hover,
+#categories-grid > div:hover,
+.bg-white.rounded-[2rem]:hover,
+.bg-white.rounded-2xl:hover{
+  box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.28), 0 0 18px rgba(var(--neon-yellow-rgb),.16), 0 16px 34px rgba(0,0,0,.14);
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus-visible,
+a:focus-visible{
+  box-shadow: 0 0 0 2px rgba(var(--neon-yellow-rgb),.30), 0 0 18px rgba(var(--neon-yellow-rgb),.22) !important;
+}
+.border-brand-lime,
+.border-brand-lime\/20,
+.border-brand-lime\/30,
+.border-brand-lime\/40,
+.border-brand-lime\/50{
+  box-shadow: 0 0 12px rgba(var(--neon-yellow-rgb),.12);
+}
+#inicio .inline-flex.items-center.gap-2.px-3\.5,
+#inicio .absolute.inset-0.bg-brand-lime\/15,
+header .bg-brand-lime\/10,
+.bg-brand-lime\/10,
+.bg-brand-lime\/15{
+  box-shadow: 0 0 18px rgba(var(--neon-yellow-rgb),.10);
+}
+#productGrid .relative.aspect-\[4\/5\]{
+  box-shadow: inset 0 0 0 1px rgba(var(--neon-yellow-rgb),.12), inset 0 -40px 50px rgba(0,0,0,.16);
+}
+#productGrid .relative.aspect-\[4\/5\]::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  box-shadow: inset 0 0 20px rgba(var(--neon-yellow-rgb),.10);
+}
+#sobre .bg-white,
+#faq .bg-white{
+  box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.08), 0 12px 28px rgba(0,0,0,.08);
+}
+a[href*="whatsapp"],
+button[onclick*="WhatsApp"],
+button[onclick*="openGeneralWhatsApp"],
+button[onclick*="triggerModalWhatsAppBuy"]{
+  animation: neonPulse 2.4s ease-in-out infinite;
+}
+@keyframes neonPulse {
+  0%,100%{ box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.24), 0 0 12px rgba(var(--neon-yellow-rgb),.20), 0 0 26px rgba(var(--neon-yellow-rgb),.12); }
+  50%{ box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.36), 0 0 16px rgba(var(--neon-yellow-rgb),.38), 0 0 36px rgba(var(--neon-yellow-rgb),.22); }
+}
+.floating-whatsapp,
+a[aria-label*="WhatsApp"],
+a[title*="WhatsApp"]{
+  box-shadow: 0 0 0 1px rgba(var(--neon-yellow-rgb),.30), 0 0 16px rgba(var(--neon-yellow-rgb),.30), 0 0 36px rgba(var(--neon-yellow-rgb),.18) !important;
+}
+</style>
+<style id="boldstorm-brand-categories">
+.brand-icons-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1.25rem;
+  justify-items:center;
+}
+.brand-round-button{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:.8rem;
+  background:transparent;
+  border:0;
+  cursor:pointer;
+}
+.brand-round-badge{
+  width:clamp(120px,19vw,170px);
+  aspect-ratio:1/1;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1.25rem;
+  background:radial-gradient(circle at 30% 25%, rgba(255,255,255,.42), rgba(255,255,255,.06) 36%), linear-gradient(145deg,#F8CD00 0%, #ffd91f 58%, #f3bc00 100%);
+  border:1px solid rgba(5,5,5,.14);
+  box-shadow:0 0 0 1px rgba(248,205,0,.18), 0 0 22px rgba(248,205,0,.18), 0 18px 30px rgba(0,0,0,.12), inset 0 8px 18px rgba(255,255,255,.32);
+  transition:transform .32s ease, box-shadow .32s ease, border-color .32s ease;
+}
+.brand-round-button:hover .brand-round-badge,
+.brand-round-button:focus-visible .brand-round-badge{
+  transform:translateY(-4px) scale(1.03);
+  border-color:#F8CD00;
+  box-shadow:0 0 0 1px rgba(248,205,0,.28), 0 0 26px rgba(248,205,0,.30), 0 22px 36px rgba(0,0,0,.16), inset 0 8px 18px rgba(255,255,255,.38);
+}
+.brand-round-logo{
+  width:78%;
+  max-height:64px;
+  object-fit:contain;
+  display:block;
+  filter:drop-shadow(0 4px 6px rgba(0,0,0,.16));
+  transition:transform .32s ease, filter .32s ease;
+}
+.brand-round-button:hover .brand-round-logo,
+.brand-round-button:focus-visible .brand-round-logo{
+  transform:scale(1.05);
+  filter:drop-shadow(0 5px 10px rgba(0,0,0,.24));
+}
+.brand-round-name{
+  font-family:inherit;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:.95rem;
+  color:#111827;
+}
+.brand-round-sub{
+  font-size:.75rem;
+  line-height:1.3;
+  color:#64748b;
+  max-width:12rem;
+}
+@media(min-width:640px){
+  .brand-icons-grid{grid-template-columns:repeat(4,minmax(0,1fr)); gap:1.5rem;}
+}
+</style>
+
+<style id="boldstorm-responsive-final">
+/* Proteção geral contra estouro horizontal */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+img, video, svg {
+    max-width: 100%;
+}
+button, a, input, select, textarea {
+    max-width: 100%;
+}
+
+/* Seção Mais Vendidas */
+#mais-vendidas article {
+    min-width: 0;
+}
+#mais-vendidas h2,
+#mais-vendidas h3,
+#mais-vendidas p,
+#mais-vendidas span {
+    overflow-wrap: anywhere;
+}
+
+/* Celulares */
+@media (max-width: 639px) {
+    #mais-vendidas {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    #mais-vendidas > .max-w-7xl {
+        padding-left: 0.9rem !important;
+        padding-right: 0.9rem !important;
+    }
+
+    #mais-vendidas .mb-8 {
+        margin-bottom: 1.35rem !important;
+    }
+
+    #mais-vendidas h2 {
+        font-size: clamp(1.85rem, 9vw, 2.55rem) !important;
+        line-height: .96 !important;
+        letter-spacing: -0.035em !important;
+    }
+
+    #mais-vendidas h2 span {
+        display: inline;
+    }
+
+    #mais-vendidas .inline-flex.items-center.gap-2.rounded-full {
+        max-width: 100%;
+        padding: .55rem .75rem !important;
+    }
+
+    #mais-vendidas .inline-flex.items-center.gap-2.rounded-full span {
+        font-size: .58rem !important;
+        letter-spacing: .13em !important;
+        line-height: 1.2 !important;
+    }
+
+    #mais-vendidas article {
+        border-radius: 1.15rem !important;
+    }
+
+    #mais-vendidas article > div {
+        aspect-ratio: 4 / 5 !important;
+        min-height: 440px;
+    }
+
+    #mais-vendidas article img {
+        object-position: center center;
+    }
+
+    #mais-vendidas article .absolute.top-4.left-4 {
+        top: .8rem !important;
+        left: .8rem !important;
+        right: .8rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: .4rem !important;
+    }
+
+    #mais-vendidas article .absolute.top-4.left-4 span {
+        padding: .45rem .6rem !important;
+        font-size: .58rem !important;
+        line-height: 1 !important;
+    }
+
+    #mais-vendidas article .absolute.left-5.right-5.bottom-5 {
+        left: 1rem !important;
+        right: 1rem !important;
+        bottom: 1rem !important;
+    }
+
+    #mais-vendidas article h3 {
+        font-size: clamp(1.25rem, 6vw, 1.65rem) !important;
+        line-height: 1.02 !important;
+    }
+
+    #mais-vendidas article p {
+        font-size: .75rem !important;
+        line-height: 1.45 !important;
+        margin-top: .5rem !important;
+    }
+
+    #mais-vendidas article button {
+        width: 100% !important;
+        margin-top: .85rem !important;
+        padding: .85rem .9rem !important;
+        font-size: .7rem !important;
+        min-height: 46px;
+    }
+
+    /* Catálogo mais confortável no celular */
+    #productGrid {
+        gap: 1rem !important;
+    }
+
+    #productGrid > div {
+        border-radius: 1.15rem !important;
+    }
+
+    #productGrid > div .p-6 {
+        padding: 1rem !important;
+    }
+
+    #productGrid > div .grid.grid-cols-2.gap-3 {
+        gap: .55rem !important;
+    }
+
+    #productGrid > div button {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+        min-height: 46px;
+    }
+
+    /* Evita aperto no cabeçalho */
+    header .max-w-7xl {
+        padding-left: .75rem !important;
+        padding-right: .75rem !important;
+    }
+}
+
+/* Celulares muito estreitos */
+@media (max-width: 380px) {
+    #mais-vendidas article > div {
+        min-height: 420px;
+    }
+
+    #mais-vendidas article h3 {
+        font-size: 1.2rem !important;
+    }
+
+    #mais-vendidas article p {
+        font-size: .7rem !important;
+    }
+
+    #productGrid > div .grid.grid-cols-2.gap-3 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Tablets */
+@media (min-width: 640px) and (max-width: 1023px) {
+    #mais-vendidas {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+    }
+
+    #mais-vendidas article > div {
+        aspect-ratio: 4 / 5 !important;
+        min-height: 500px;
+    }
+
+    #mais-vendidas article .absolute.left-5.right-5.bottom-5 {
+        left: 1.25rem !important;
+        right: 1.25rem !important;
+        bottom: 1.25rem !important;
+    }
+
+    #mais-vendidas article h3 {
+        font-size: 1.6rem !important;
+    }
+
+    #mais-vendidas article button {
+        width: 100% !important;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1024px) {
+    #mais-vendidas article > div {
+        min-height: 520px;
+    }
+}
+</style>
+
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-brand-lime selection:text-black">
+<!-- MAIN NAVIGATION HEADER (STICKY) -->
+<header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-lime/20 shadow-xl transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- BOLD STORM LOGO -->
+<a aria-label="Bold Storm - início" class="flex items-center gap-3 group shrink-0" href="#inicio" onclick="filterByAll()">
+<img alt="Bold Storm" class="storm-logo h-14 sm:h-16 w-auto object-contain group-hover:scale-[1.02] transition duration-300 rounded-xl" src="assets/img-001-8962743c6d.jpg"/>
+</a>
+<!-- DESKTOP NAV MENU LINKS -->
+<nav class="hidden xl:flex items-center space-x-4 text-sm font-bold text-white tracking-tight">
+<a class="hover:text-brand-limeDark transition py-2 border-b-2 border-transparent hover:border-brand-lime" href="#inicio" onclick="filterByAll()">Início</a>
+<a class="hover:text-brand-limeDark transition py-2" href="#categorias">Categorias</a>
+<a class="hover:text-brand-limeDark transition py-2" href="#mais-vendidas">Mais Vendidas</a>
+<a class="hover:text-brand-limeDark transition py-2" href="#catalogo" onclick="filterByTag('lancamento')">Lançamentos</a>
+<a class="hover:text-brand-limeDark transition py-2 text-red-600 font-extrabold" href="#catalogo" onclick="filterByTag('promocao')">Promoções</a>
+<!-- MARCAS DROPDOWN -->
+<div class="relative group py-2">
+<button class="flex items-center gap-1 hover:text-brand-limeDark transition">
+                            Marcas <i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
+</button>
+<div class="absolute left-0 mt-2 w-48 bg-brand-dark rounded-xl shadow-2xl border border-slate-800 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 py-2 text-slate-200 text-xs font-semibold">
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByBrand('Nike')"><i class="fa-angle-right mr-2"></i>Nike</a>
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByBrand('Adidas')"><i class="fa-angle-right mr-2"></i>Adidas</a>
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByBrand('Puma')"><i class="fa-angle-right mr-2"></i>Puma</a><a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByBrand('Mizuno')"><i class="fa-angle-right mr-2"></i>Mizuno</a>
+</div>
+</div>
+<!-- CAMPO DROPDOWN -->
+<div class="relative group py-2">
+<button class="flex items-center gap-1 hover:text-brand-limeDark transition">
+                            Tipo de Campo <i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
+</button>
+<div class="absolute left-0 mt-2 w-52 bg-brand-dark rounded-xl shadow-2xl border border-slate-800 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 py-2 text-slate-200 text-xs font-semibold">
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByPitch('Campo FG')"><i class="fa-angle-right mr-2"></i>Campo Trava FG (Campo)</a>
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByPitch('Campo SG')"><i class="fa-angle-right mr-2"></i>Campo Trava SG (Molhado)</a>
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByPitch('Gramado Artificial AG')"><i class="fa-angle-right mr-2"></i>Sintético AG</a>
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByPitch('Society')"><i class="fa-angle-right mr-2"></i>Society (TF)</a>
+<a class="block px-4 py-2 hover:bg-slate-800 hover:text-brand-lime" href="#catalogo" onclick="filterByPitch('Futsal')"><i class="fa-angle-right mr-2"></i>Futsal (IN)</a>
+</div>
+</div>
+
+
+<a class="hover:text-brand-limeDark transition py-2" href="#sobre">Sobre Nós</a>
+<a class="hover:text-brand-limeDark transition py-2" href="#faq">FAQ</a>
+</nav>
+<!-- HEADER SEARCH BAR & WHATSAPP BUTTON -->
+<div class="flex items-center space-x-2 sm:space-x-3">
+<!-- Search Input Trigger -->
+<div class="relative hidden 2xl:block w-48 md:w-60">
+<input class="w-full bg-white/10 border border-white/15 text-white placeholder:text-slate-400 rounded-full py-2 pl-9 pr-4 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-brand-lime focus:bg-white/15 transition" id="searchInput" oninput="handleSearch(this.value)" placeholder="Buscar chuteira..." type="text"/>
+<i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
+</div>
+<!-- Direct WhatsApp Header CTA -->
+<a class="hidden xl:inline-flex items-center gap-2 bg-brand-lime hover:bg-yellow-300 text-black px-4 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wide border border-brand-lime transition transform active:scale-95 shadow-md" href="#" onclick="openGeneralWhatsApp()">
+<i class="fa-brands fa-whatsapp text-brand-lime text-base"></i>
+<span>Falar no WhatsApp</span>
+</a>
+<!-- Mobile Hamburger Menu Button -->
+<button aria-label="Mudar para inglês" class="inline-flex items-center gap-2 h-10 px-3 rounded-full border border-brand-lime/50 text-brand-lime hover:bg-brand-lime hover:text-black font-extrabold text-xs tracking-wider transition" id="languageToggle" onclick="toggleLanguage()" type="button"><i class="fa-solid fa-globe"></i><span id="languageToggleLabel">EN</span></button><button class="xl:hidden p-2.5 rounded-xl bg-white/10 text-white hover:bg-brand-lime hover:text-black transition focus:outline-none" onclick="toggleMobileMenu()">
+<i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- MOBILE MENU DRAWER -->
+<div class="hidden xl:hidden bg-brand-dark text-white border-b border-slate-800 px-6 py-6 transition-all duration-300" id="mobileMenu">
+<!-- Mobile Search Bar -->
+<div class="mb-4 rounded-xl border border-brand-lime/30 bg-brand-lime/10 px-4 py-3 text-xs text-slate-200">Atendimento online • Português e English</div><div class="relative mb-6">
+<input class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:border-brand-lime" oninput="handleSearch(this.value)" placeholder="Buscar por modelo, marca ou tamanho..." type="text"/>
+<i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400"></i>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm font-semibold mb-6">
+<a class="p-2.5 bg-slate-800/80 rounded-lg hover:text-brand-lime" href="#inicio" onclick="toggleMobileMenu(); filterByAll();"><i class="fa-solid fa-house mr-2 text-brand-lime"></i>Início</a>
+<a class="p-2.5 bg-slate-800/80 rounded-lg hover:text-brand-lime" href="#categorias" onclick="toggleMobileMenu();"><i class="fa-solid fa-layer-group mr-2 text-brand-lime"></i>Categorias</a>
+<a class="p-2.5 bg-slate-800/80 rounded-lg hover:text-brand-lime" href="#mais-vendidas" onclick="toggleMobileMenu();"><i class="fa-solid fa-fire mr-2 text-brand-lime"></i>Mais Vendidas</a>
+<a class="p-2.5 bg-slate-800/80 rounded-lg hover:text-brand-lime" href="#catalogo" onclick="toggleMobileMenu(); filterByTag('lancamento');"><i class="fa-solid fa-fire mr-2 text-brand-lime"></i>Lançamentos</a>
+<a class="p-2.5 bg-slate-800/80 rounded-lg hover:text-brand-lime text-red-400" href="#catalogo" onclick="toggleMobileMenu(); filterByTag('promocao');"><i class="fa-solid fa-tag mr-2 text-red-400"></i>Promoções</a>
+
+
+<a class="p-2.5 bg-slate-800/80 rounded-lg hover:text-brand-lime" href="#sobre" onclick="toggleMobileMenu();"><i class="fa-solid fa-circle-info mr-2 text-brand-lime"></i>Sobre Nós</a>
+</div>
+<!-- Mobile Brand Quick Links -->
+<div class="border-t border-slate-800 pt-4 mb-4">
+<span class="text-xs uppercase tracking-widest text-slate-400 font-extrabold block mb-3">Marcas Principais</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1.5 bg-slate-800 text-xs rounded-full font-bold hover:bg-brand-lime hover:text-black" onclick="toggleMobileMenu(); filterByBrand('Nike');">Nike</button>
+<button class="px-3 py-1.5 bg-slate-800 text-xs rounded-full font-bold hover:bg-brand-lime hover:text-black" onclick="toggleMobileMenu(); filterByBrand('Adidas');">Adidas</button>
+<button class="px-3 py-1.5 bg-slate-800 text-xs rounded-full font-bold hover:bg-brand-lime hover:text-black" onclick="toggleMobileMenu(); filterByBrand('Puma');">Puma</button><button class="px-3 py-1.5 bg-slate-800 text-xs rounded-full font-bold hover:bg-brand-lime hover:text-black" onclick="toggleMobileMenu(); filterByBrand('Mizuno');">Mizuno</button>
+</div>
+</div>
+<!-- Mobile Direct WhatsApp CTA Button -->
+<button class="w-full bg-brand-lime hover:bg-yellow-300 text-black font-extrabold py-3.5 rounded-xl text-center flex items-center justify-center gap-2 shadow-lg uppercase text-sm tracking-wider" onclick="openGeneralWhatsApp()">
+<i class="fa-brands fa-whatsapp text-xl"></i> Falar com Atendente no WhatsApp
+            </button>
+</div>
+</header>
+<!-- HERO MAIN BANNER -->
+<section class="storm-grid relative bg-brand-dark text-white overflow-hidden min-h-[560px] lg:min-h-[650px] flex items-center" id="inicio">
+<!-- Background Dark Gradient Overlay & Dynamic Soccer Visual Pattern -->
+<div class="absolute inset-0 z-0 bg-cover bg-center opacity-30 transform scale-105" style="background-image: url('assets/img-002-fe0fbfa4e1.jpg');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-black via-brand-dark/95 to-transparent z-10"></div>
+<div class="absolute right-0 top-0 bottom-0 w-1/2 bg-gradient-to-l from-brand-lime/10 to-transparent pointer-events-none hidden lg:block"></div>
+<div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Text Content -->
+<div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/40 text-brand-lime text-xs font-extrabold uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-brand-lime"></span>
+                        Envios com rastreamento
+                    </div>
+<h1 class="font-heading font-black text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-none text-white uppercase">
+                        BOLD STORM <br class="hidden sm:inline"/>
+<span class="text-brand-lime">UM TEMPORAL DE NOVIDADES ⚡️</span>
+</h1>
+<p class="text-slate-300 text-base sm:text-lg max-w-2xl font-medium leading-relaxed mx-auto lg:mx-0">
+                        Descubra uma seleção exclusiva das melhores chuteiras, compare os modelos e escolha o tamanho ideal. A nossa equipa está disponível para confirmar a disponibilidade e prestar-lhe um atendimento personalizado.
+                    </p>
+<!-- Hero Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+<a class="w-full sm:w-auto px-8 py-4 bg-brand-lime hover:bg-brand-limeDark text-slate-950 font-heading font-black uppercase text-sm tracking-wider rounded-xl shadow-lg hover:shadow-brand-lime/30 transition duration-300 text-center transform hover:-translate-y-0.5" href="#catalogo">
+<i class="fa-solid fa-shoe-prints mr-2"></i> Explorar catálogo
+                        </a>
+<a class="w-full sm:w-auto px-8 py-4 bg-slate-900/90 hover:bg-black text-white font-heading font-bold uppercase text-sm tracking-wider rounded-xl border border-slate-700 hover:border-brand-lime transition duration-300 text-center flex items-center justify-center gap-2" href="#" onclick="openGeneralWhatsApp()">
+<i class="fa-brands fa-whatsapp text-brand-lime text-lg"></i> Escolher modelo
+                        </a>
+</div>
+<!-- Clear reasons to use the catalog -->
+<div class="pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
+<div class="rounded-xl bg-white/5 border border-white/10 p-3.5">
+<i class="fa-solid fa-filter text-brand-lime mb-2"></i>
+<span class="text-xs text-white font-extrabold uppercase block">Filtros úteis</span>
+<span class="text-[11px] text-slate-400">Escolha por uso e tamanho</span>
+</div>
+<div class="rounded-xl bg-white/5 border border-white/10 p-3.5">
+<i class="fa-brands fa-whatsapp text-black mb-2"></i>
+<span class="text-xs text-white font-extrabold uppercase block">Atendimento direto</span>
+<span class="text-[11px] text-slate-400">Conversa com a Bold Storm</span>
+</div>
+<div class="rounded-xl bg-white/5 border border-white/10 p-3.5">
+<i class="fa-solid fa-box-open text-brand-lime mb-2"></i>
+<span class="text-xs text-white font-extrabold uppercase block">Estoque confirmado</span>
+<span class="text-[11px] text-slate-400">Consulte antes de finalizar</span>
+</div>
+</div>
+</div>
+<!-- Hero Spotlight Featured Image Showcase -->
+<div class="lg:col-span-5 relative hidden lg:block">
+<div class="relative w-full aspect-square max-w-md mx-auto flex items-center justify-center">
+<div class="absolute inset-0 bg-brand-lime/15 rounded-full filter blur-3xl"></div>
+<img alt="Chuteira Bold Storm Puma" class="relative z-10 w-full h-full object-cover rounded-[2rem] border border-white/10 shadow-[0_25px_55px_rgba(0,0,0,0.45)] transition duration-500" src="assets/img-002-fe0fbfa4e1.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEST SELLERS SPOTLIGHT -->
+<section id="mais-vendidas" class="relative overflow-hidden bg-brand-dark text-white py-14 sm:py-20 border-y border-brand-lime/20">
+<div class="absolute -top-24 -left-20 w-72 h-72 rounded-full bg-brand-lime/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-20 w-80 h-80 rounded-full bg-brand-lime/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-8 sm:mb-10">
+<div>
+<div class="inline-flex items-center gap-2 rounded-full border border-brand-lime/30 bg-brand-lime/10 px-3.5 py-2 mb-4">
+<i class="fa-solid fa-fire text-brand-lime"></i>
+<span class="text-[10px] sm:text-xs font-black uppercase tracking-[0.20em] text-brand-lime">Os favoritos dos clientes</span>
+</div>
+<h2 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tight leading-none">
+AS <span class="text-brand-lime">MAIS VENDIDAS</span>
+</h2>
+<p class="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl">Dois modelos em destaque entre os pedidos da Bold Storm.</p>
+</div>
+<div class="hidden lg:flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-slate-400">
+<span class="w-10 h-px bg-brand-lime"></span>
+Destaques da semana
+</div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-8">
+<article class="group relative rounded-[1.75rem] overflow-hidden border border-white/10 bg-slate-950 shadow-2xl hover:border-brand-lime/60 transition duration-300">
+<div class="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/3] overflow-hidden bg-slate-900">
+<img src="assets/img-003-53e50d9f50.jpg" alt="Nike Mercurial rosa, branca e preta" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-[1.035]">
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/15 to-transparent"></div>
+<div class="absolute top-4 left-4 flex items-center gap-2">
+<span class="rounded-lg bg-brand-lime px-3 py-2 text-[11px] font-black uppercase tracking-wider text-black shadow-lg">TOP 1 EM VENDAS</span>
+<span class="rounded-lg border border-white/20 bg-black/65 backdrop-blur px-3 py-2 text-[10px] font-extrabold uppercase tracking-wider">Nike</span>
+</div>
+<div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+<div class="text-[11px] uppercase tracking-[0.22em] font-black text-brand-lime mb-2">Mais Vendida</div>
+<h3 class="font-heading font-black text-2xl sm:text-3xl uppercase leading-tight">Mercurial Rosa / Branco / Preto</h3>
+<p class="mt-2 text-xs sm:text-sm text-slate-300 max-w-xl">Visual marcante, perfil de velocidade e destaque absoluto no catálogo.</p>
+<button type="button" onclick="openBestSellerWhatsApp('Nike Mercurial Rosa / Branco / Preto')" class="mt-5 inline-flex items-center justify-center gap-2 bg-brand-lime hover:bg-yellow-300 text-black font-black uppercase text-xs sm:text-sm px-5 py-3.5 rounded-xl transition shadow-lg">
+<i class="fa-brands fa-whatsapp text-lg"></i> Consultar no WhatsApp
+</button>
+</div>
+</div>
+</article>
+
+<article class="group relative rounded-[1.75rem] overflow-hidden border border-white/10 bg-slate-950 shadow-2xl hover:border-brand-lime/60 transition duration-300">
+<div class="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/3] overflow-hidden bg-slate-900">
+<img src="assets/img-004-b0b24c75f7.jpg" alt="Chuteira Adidas branca, rosa e azul" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-[1.035]">
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/15 to-transparent"></div>
+<div class="absolute top-4 left-4 flex items-center gap-2">
+<span class="rounded-lg bg-brand-lime px-3 py-2 text-[11px] font-black uppercase tracking-wider text-black shadow-lg">TOP 2 EM VENDAS</span>
+<span class="rounded-lg border border-white/20 bg-black/65 backdrop-blur px-3 py-2 text-[10px] font-extrabold uppercase tracking-wider">Adidas</span>
+</div>
+<div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+<div class="text-[11px] uppercase tracking-[0.22em] font-black text-brand-lime mb-2">Mais Vendida</div>
+<h3 class="font-heading font-black text-2xl sm:text-3xl uppercase leading-tight">Adidas Branco / Rosa / Azul</h3>
+<p class="mt-2 text-xs sm:text-sm text-slate-300 max-w-xl">Combinação premium e uma das escolhas que mais chamam atenção dentro de campo.</p>
+<button type="button" onclick="openBestSellerWhatsApp('Adidas Branco / Rosa / Azul')" class="mt-5 inline-flex items-center justify-center gap-2 bg-brand-lime hover:bg-yellow-300 text-black font-black uppercase text-xs sm:text-sm px-5 py-3.5 rounded-xl transition shadow-lg">
+<i class="fa-brands fa-whatsapp text-lg"></i> Consultar no WhatsApp
+</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- CATEGORIES BELOW THE HOME SECTION -->
+<section class="bg-stone-50 border-b border-slate-200 py-8 sm:py-11" id="categorias">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
+<div>
+<span class="text-[11px] font-extrabold uppercase tracking-[0.22em] text-slate-500">Marcas disponíveis</span>
+<h2 class="font-heading font-black text-2xl sm:text-4xl text-slate-950 uppercase">Compre por marca</h2>
+<p class="text-sm text-slate-600 mt-2 max-w-2xl">Confira os lançamentos mais recentes e os modelos mais vendidos da Bold Storm.</p>
+</div>
+<a class="hidden sm:inline-flex items-center gap-2 text-xs font-extrabold uppercase text-slate-800 hover:text-brand-limeDark transition" href="#catalogo" onclick="filterByAll()">Ver catálogo <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+<div class="brand-icons-grid">
+<button class="brand-round-button" onclick="filterByBrand('Nike')" type="button">
+<span class="brand-round-badge"><img alt="Logo oficial da Nike" class="brand-round-logo" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg"/></span>
+<span class="brand-round-name">Nike</span>
+<span class="brand-round-sub">Mercurial, Phantom e Tiempo</span>
+</button>
+<button class="brand-round-button" onclick="filterByBrand('Adidas')" type="button">
+<span class="brand-round-badge"><img alt="Logo oficial da Adidas" class="brand-round-logo" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg"/></span>
+<span class="brand-round-name">Adidas</span>
+<span class="brand-round-sub">F50, Predator e X</span>
+</button>
+<button class="brand-round-button" onclick="filterByBrand('Puma')" type="button">
+<span class="brand-round-badge"><img alt="Logo oficial da Puma" class="brand-round-logo" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Puma-logo-%28text%29.svg"/></span>
+<span class="brand-round-name">Puma</span>
+<span class="brand-round-sub">Ultra e linhas de velocidade</span>
+</button><button class="brand-round-button" onclick="filterByBrand('Mizuno')" type="button">
+<span class="brand-round-badge"><img alt="Logo oficial da Mizuno" class="brand-round-logo" loading="lazy" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20520%20150%22%20role%3D%22img%22%20aria-label%3D%22Logo%20oficial%20da%20Mizuno%22%3E%0A%20%20%3Cg%20fill%3D%22%23111827%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M38%2083c45-45%2087-58%20137-40-32%204-57%2017-78%2036%2044-19%2087-18%20129%205-39-4-73%203-104%2020%2042-7%2079%201%20113%2024-67-20-128-20-197%2010%2016-19%2033-37%2050-55-17%207-34%2015-50%2024z%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22220%22%20y%3D%22102%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20font-size%3D%2264%22%20font-weight%3D%22900%22%20letter-spacing%3D%222%22%3EMIZUNO%3C/text%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"/></span>
+<span class="brand-round-name">Mizuno</span>
+<span class="brand-round-sub">Morelia e linhas de controle</span>
+</button>
+</div>
+</div>
+</section>
+<!-- MAIN CATALOG CONTAINER & FILTER CONTROLS BAR -->
+<section class="py-16 bg-white min-h-[600px]" id="catalogo">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Filter Bar Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between border-b border-slate-200 pb-6 mb-8 gap-4">
+<div>
+<span class="text-xs font-bold text-brand-limeDark bg-lime-100 px-3 py-1 rounded-full uppercase inline-block mb-1" id="activeFilterBadge">
+                        Todos os produtos
+                    </span>
+<h2 class="font-heading font-black text-3xl text-slate-900 uppercase">CATÁLOGO DE CHUTEIRAS</h2>
+<p class="text-xs text-slate-500 font-medium" id="productsCountLabel">Exibindo modelos em estoque</p>
+</div>
+<!-- Filter Controls & Sorting -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Category Quick Filter Pills -->
+<div class="flex items-center bg-slate-100 p-1 rounded-xl text-xs font-bold overflow-x-auto no-scrollbar">
+<button class="px-3 py-2 rounded-lg bg-white text-slate-900 shadow-sm transition" id="pillAll" onclick="filterByAll()">Todos</button>
+<button class="px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition" id="pillNew" onclick="filterByTag('lancamento')">Lançamentos</button>
+<button class="px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition" id="pillPopular" onclick="filterByTag('mais-vendida')">Mais Vendidas</button>
+<button class="px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition" id="pillField" onclick="filterByPitch('Campo FG')">Campo</button>
+<button class="px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition" id="pillSociety" onclick="filterByPitch('Society')">Society</button>
+<button class="px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition" id="pillFutsal" onclick="filterByPitch('Futsal')">Futsal</button>
+</div>
+<!-- Sorting Dropdown -->
+<div class="relative">
+<select class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-xl py-2.5 px-3 pr-8 focus:outline-none cursor-pointer" id="sortSelect" onchange="sortProducts(this.value)">
+<option value="default">Ordenar por: Relevância</option>
+<option value="recent">Mais Recentes</option>
+<option value="name-asc">Nome (A-Z)</option>
+</select>
+</div>
+<!-- Reset Filters Button -->
+<button class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold rounded-xl transition" onclick="filterByAll()" title="Limpar Filtros">
+<i class="fa-solid fa-arrows-rotate mr-1"></i>Limpar
+                    </button>
+</div>
+</div>
+<!-- DYNAMIC PRODUCT GRID CONTAINER -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-7 items-stretch" id="productGrid">
+<!-- JavaScript will dynamically render cards here -->
+</div>
+<!-- Empty Results Notice -->
+<div class="hidden text-center py-20 bg-stone-50 rounded-3xl border border-dashed border-slate-300" id="noResults">
+<i class="fa-solid fa-shoe-prints text-5xl text-slate-300 mb-4 block"></i>
+<h3 class="font-heading font-black text-xl text-slate-800 uppercase">Nenhum produto encontrado</h3>
+<p class="text-sm text-slate-500 max-w-sm mx-auto mt-1 mb-6">Tente ajustar a sua busca ou remover os filtros aplicados.</p>
+<button class="px-6 py-3 bg-brand-dark text-white font-extrabold text-xs uppercase rounded-xl hover:bg-black transition" onclick="filterByAll()">
+                    Ver todos os produtos
+                </button>
+</div>
+</div>
+</section>
+<!-- SECTION: SOBRE A LOJA -->
+<section class="py-20 bg-stone-900 text-white relative overflow-hidden" id="sobre">
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background: radial-gradient(circle at 15% 20%, rgba(248,205,0,.28), transparent 32%), radial-gradient(circle at 85% 80%, rgba(248,205,0,.12), transparent 28%);"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-lime text-xs font-bold uppercase">
+<i class="fa-solid fa-bolt"></i>
+Sobre a Bold Storm
+</div>
+<h2 class="font-heading font-black text-3xl sm:text-5xl uppercase leading-none">
+Sobre a <span class="text-brand-lime">Bold Storm</span>
+</h2>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+Na Bold Storm, acreditamos que comprar artigos desportivos deve ser uma experiência simples, segura e transparente.
+</p>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+Somos uma loja online dedicada a disponibilizar produtos cuidadosamente selecionados, combinando qualidade, inovação e um excelente custo-benefício. Trabalhamos diariamente para oferecer um catálogo atualizado, com os lançamentos mais procurados e um serviço que coloca o cliente no centro de cada decisão.
+</p>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+A confiança é a base da nossa marca. Por isso, privilegiamos uma comunicação transparente, um atendimento personalizado e um processo de compra fiável, desde a encomenda até à entrega.
+</p>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+O nosso slogan, “Um Temporal de Novidades”, traduz o compromisso de apresentar continuamente novas coleções, tendências e oportunidades, proporcionando uma experiência de compra moderna e diferenciada.
+</p>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+Independentemente de onde esteja, a nossa missão é levar até si produtos de qualidade, com um serviço eficiente e uma experiência que inspire confiança em cada compra.
+</p>
+<div class="inline-flex items-center gap-3 bg-brand-lime text-black rounded-2xl px-5 py-4 font-heading font-black uppercase tracking-wide">
+<i class="fa-solid fa-bolt"></i>
+Bold Storm — Um Temporal de Novidades.
+</div>
+</div>
+<div class="lg:col-span-5 lg:sticky lg:top-28">
+<div class="rounded-[2rem] overflow-hidden border border-slate-800 shadow-2xl bg-slate-900">
+<img alt="Sobre a Bold Storm" class="w-full h-[640px] object-cover" src="assets/img-005-98cc55d4ba.jpg"/>
+</div>
+<div class="mt-6 rounded-3xl border border-brand-lime/30 bg-brand-lime/10 p-6">
+<div class="flex items-center gap-3 text-brand-lime mb-3"><i class="fa-solid fa-globe text-2xl"></i><span class="font-heading font-black uppercase">Atendimento mundial</span></div>
+<p class="text-sm text-slate-300 leading-relaxed">Qualidade, segurança e novidades constantes para clientes em qualquer lugar do mundo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: FAQ DÚVIDAS FREQUENTES -->
+<section class="py-16 bg-white border-t border-slate-100" id="cliente-destaque">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+<div>
+<span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-limeDark text-xs font-extrabold uppercase tracking-[0.18em] mb-4">Cliente em destaque</span>
+<h2 class="font-heading font-black text-3xl sm:text-5xl uppercase text-slate-950 leading-tight">
+<span class="text-slate-950">OS MELHORES</span><br/>
+<span class="text-brand-limeDark">USAM BOLD STORM</span>
+</h2>
+<p class="text-slate-600 mt-5 text-base sm:text-lg max-w-xl">Dentro de campo, desempenho e estilo falam por si. Mais um cliente Bold Storm representando com chuteira de alto nível.</p>
+
+</div>
+<div class="relative">
+<div class="absolute -inset-3 bg-gradient-to-br from-brand-lime/20 via-transparent to-brand-lime/10 rounded-[2rem] blur-2xl"></div>
+<div class="relative overflow-hidden rounded-[2rem] border border-slate-200 shadow-[0_20px_60px_rgba(15,23,42,0.14)] bg-white">
+<img alt="Cliente Bold Storm usando chuteira em campo" class="w-full h-auto object-cover" src="assets/img-006-a8babad49d.jpg"/>
+<div class="absolute left-4 right-4 bottom-4 rounded-2xl bg-slate-950/88 backdrop-blur-sm text-white px-5 py-4 border border-white/10">
+<div class="text-[11px] uppercase tracking-[0.22em] font-extrabold text-brand-lime mb-1">OS MELHORES USAM BOLD STORM</div>
+<div class="text-sm sm:text-base font-semibold">Cliente em campo representando a Bold Storm</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-stone-50" id="faq">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10">
+<span class="text-xs font-extrabold uppercase text-slate-400 tracking-widest block mb-1">Tire Suas Dúvidas</span>
+<h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-900 uppercase">PERGUNTAS FREQUENTES</h2>
+</div>
+<!-- Accordion items -->
+<div class="space-y-3" id="faqAccordion">
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+<button class="w-full text-left p-5 font-heading font-bold text-slate-900 flex justify-between items-center text-base sm:text-lg" onclick="toggleFaq(this)">
+<span>As chuteiras são 100% originais?</span>
+<i class="fa-solid fa-plus text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Sim, trabalhamos com produtos selecionados das marcas disponíveis no catálogo: Nike, Adidas, Puma e Mizuno. Consulte os detalhes e a disponibilidade com nossa equipe.
+                    </div>
+</div>
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+<button class="w-full text-left p-5 font-heading font-bold text-slate-900 flex justify-between items-center text-base sm:text-lg" onclick="toggleFaq(this)">
+<span>Como consultar os tamanhos disponíveis?</span>
+<i class="fa-solid fa-plus text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Clique em "Escolher modelo" na chuteira desejada, selecione a numeração e confirme a disponibilidade diretamente com nossa equipe pelo WhatsApp.
+                    </div>
+</div>
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+<button class="w-full text-left p-5 font-heading font-bold text-slate-900 flex justify-between items-center text-base sm:text-lg" onclick="toggleFaq(this)">
+<span>Como faço para realizar a compra?</span>
+<i class="fa-solid fa-plus text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Nosso site funciona como um catálogo interativo. Ao escolher a chuteira e o seu tamanho, clique no botão do WhatsApp. Você será redirecionado com uma mensagem automática e nossa equipe finalizará os detalhes de pagamento e envio com você.
+                    </div>
+</div>
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+<button class="w-full text-left p-5 font-heading font-bold text-slate-900 flex justify-between items-center text-base sm:text-lg" onclick="toggleFaq(this)">
+<span>Como funciona o envio?</span>
+<i class="fa-solid fa-plus text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        As opções de transporte, prazo, custo e rastreamento são confirmadas pelo WhatsApp conforme o endereço de entrega.
+                    </div>
+</div>
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+<button class="w-full text-left p-5 font-heading font-bold text-slate-900 flex justify-between items-center text-base sm:text-lg" onclick="toggleFaq(this)">
+<span>Posso solicitar troca caso a numeração não sirva?</span>
+<i class="fa-solid fa-plus text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Sim. Garantimos o direito de troca de numeração em até 7 dias após o recebimento, desde que o produto esteja sem marcas de uso em campo e com as etiquetas originais intactas.
+                    </div>
+</div>
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+<button class="w-full text-left p-5 font-heading font-bold text-slate-900 flex justify-between items-center text-base sm:text-lg" onclick="toggleFaq(this)">
+<span>Quais são as formas de pagamento aceitas?</span>
+<i class="fa-solid fa-plus text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        A equipe informa pelo WhatsApp as formas de pagamento disponíveis antes da confirmação do pedido.
+                    </div>
+</div>
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+<button class="w-full text-left p-5 font-heading font-bold text-slate-900 flex justify-between items-center text-base sm:text-lg" onclick="toggleFaq(this)">
+<span>É possível pedir mais fotos pelo WhatsApp?</span>
+<i class="fa-solid fa-plus text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Sim! Nosso atendimento no WhatsApp é focado em transparência total. Você pode pedir fotos em tempo real, vídeos das travas, palmar e detalhes do modelo de seu interesse.
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER SECTION -->
+<footer class="bg-brand-dark text-slate-300 border-t border-slate-800 pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+<!-- Col 1: Store Intro -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center">
+<img alt="Bold Storm" class="h-14 w-auto object-contain rounded-xl" src="assets/img-001-8962743c6d.jpg"/>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Catálogo de chuteiras, seminovas e acessórios com atendimento direto pelo WhatsApp.
+                    </p>
+<div class="flex items-center space-x-3 text-slate-400 text-sm">
+<a class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-lime hover:text-black transition" href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-lime hover:text-black transition" href="#" onclick="openGeneralWhatsApp()"><i class="fa-brands fa-whatsapp"></i></a>
+<a class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition" href="#"><i class="fa-solid fa-envelope"></i></a>
+</div>
+</div>
+<!-- Col 2: Quick Links -->
+<div>
+<h4 class="font-heading font-bold text-white uppercase text-xs tracking-wider mb-4">Navegação</h4>
+<ul class="space-y-2 text-xs font-semibold">
+<li><a class="hover:text-brand-lime transition" href="#inicio" onclick="filterByAll()">Início</a></li>
+<li><a class="hover:text-brand-lime transition" href="#catalogo" onclick="filterByTag('lancamento')">Lançamentos</a></li>
+<li><a class="hover:text-brand-lime transition text-red-400" href="#catalogo" onclick="filterByTag('promocao')">Promoções</a></li>
+
+
+</ul>
+</div>
+<!-- Col 3: Marcas -->
+<div>
+<h4 class="font-heading font-bold text-white uppercase text-xs tracking-wider mb-4">Principais Marcas</h4>
+<ul class="space-y-2 text-xs font-semibold">
+<li><a class="hover:text-brand-lime transition" href="#catalogo" onclick="filterByBrand('Nike')">Nike Mercurial / Phantom</a></li>
+<li><a class="hover:text-brand-lime transition" href="#catalogo" onclick="filterByBrand('Adidas')">Adidas Predator / F50</a></li>
+<li><a class="hover:text-brand-lime transition" href="#catalogo" onclick="filterByBrand('Puma')">Puma Future / Ultra</a></li><li><a class="hover:text-brand-lime transition" href="#catalogo" onclick="filterByBrand('Mizuno')">Mizuno Morelia</a></li>
+</ul>
+</div>
+<!-- Col 4: Horários e Atendimento -->
+<div>
+<h4 class="font-heading font-bold text-white uppercase text-xs tracking-wider mb-4">Atendimento</h4>
+<p class="text-xs text-slate-400 mb-2"><i class="fa-solid fa-clock text-brand-lime mr-1.5"></i> Atendimento online pelo WhatsApp</p>
+<p class="text-xs text-slate-400 mb-4"><i class="fa-solid fa-location-dot text-brand-lime mr-1.5"></i> Envios com rastreamento</p>
+<button class="w-full bg-brand-lime hover:bg-yellow-300 text-black font-extrabold text-xs py-2.5 rounded-xl uppercase transition flex items-center justify-center gap-1.5" onclick="openGeneralWhatsApp()">
+<i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Oficial
+                    </button>
+</div>
+</div>
+<!-- Payment Icons & Copyright -->
+<div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+<p>© 2026 BOLD STORM. Todos os direitos reservados. Atendimento direto pelo WhatsApp.</p>
+<div class="flex items-center gap-3 text-lg text-slate-400">
+<i class="fa-brands fa-pix text-emerald-400" title="Pix"></i>
+<i class="fa-brands fa-cc-visa" title="Visa"></i>
+<i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+<i class="fa-solid fa-barcode" title="Boleto Bancário"></i>
+</div>
+</div>
+</div>
+</footer>
+<!-- PRODUCT DETAIL MODAL OVERLAY -->
+<div class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto" id="productModal">
+<div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 relative my-8">
+<!-- Close Modal Button -->
+<button class="absolute top-4 right-4 z-10 w-10 h-10 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-full flex items-center justify-center transition" onclick="closeProductModal()">
+<i class="fa-solid fa-xmark text-lg"></i>
+</button>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 p-6 sm:p-8">
+<!-- Left Gallery Column -->
+<div class="md:col-span-6 space-y-4">
+<div class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-[4/5] border border-slate-200">
+<img alt="Produto" class="absolute inset-0 w-full h-full object-cover transition duration-300" id="modalMainImage" src=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none"></div>
+<span class="absolute top-3 left-3 text-[10px] font-extrabold uppercase bg-brand-lime text-black px-2.5 py-1 rounded" id="modalBadge"></span>
+</div>
+<!-- Gallery Thumbnails Carousel -->
+<div class="flex gap-2 overflow-x-auto py-1" id="modalThumbnails">
+<!-- Rendered dynamically -->
+</div>
+</div>
+<!-- Right Details Column -->
+<div class="md:col-span-6 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center justify-between">
+<span class="text-xs font-extrabold text-slate-400 uppercase tracking-widest" id="modalBrand"></span>
+<span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-full" id="modalGroundType"></span>
+</div>
+<h3 class="font-heading font-black text-2xl sm:text-3xl text-slate-900 uppercase mt-1" id="modalTitle"></h3>
+<!-- Size Selector Section -->
+<div class="mt-6">
+<div class="flex justify-between items-center mb-2">
+<label class="text-xs font-extrabold uppercase text-slate-900">Selecione o Tamanho (EU / BR) <span class="text-red-500">*</span></label>
+<span class="text-[11px] text-slate-500 font-semibold"><i class="fa-solid fa-ruler mr-1"></i>Ajuste Fiel</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="modalSizesGrid">
+<!-- Sizes rendered dynamically -->
+</div>
+<!-- Selection Alert Warning -->
+<p class="text-[11px] font-bold text-amber-600 mt-2 hidden" id="sizeWarningMsg">
+<i class="fa-solid fa-triangle-exclamation mr-1"></i> Por favor, selecione um tamanho antes de prosseguir para o WhatsApp.
+                            </p>
+</div>
+<!-- Specs List -->
+<div class="mt-6 space-y-2 text-xs text-slate-600">
+<p class="leading-relaxed" id="modalDescription"></p>
+<div class="pt-3 border-t border-slate-200 space-y-1.5 font-medium">
+<div class="flex justify-between"><span>Condição:</span><strong class="text-slate-900" id="modalCondition"></strong></div>
+<div class="flex justify-between"><span>Informações do produto:</span><strong class="text-slate-900">Confirme no atendimento</strong></div>
+<div class="flex justify-between"><span>Disponibilidade:</span><strong class="text-slate-900">Sujeita à confirmação</strong></div>
+</div>
+</div>
+</div>
+<!-- Direct WhatsApp Buy Button in Modal -->
+<div class="pt-4 border-t border-slate-200">
+<button class="w-full bg-brand-lime hover:bg-yellow-300 text-black font-heading font-extrabold text-sm uppercase py-4 rounded-2xl flex items-center justify-center gap-2 shadow-lg transition transform active:scale-98" id="modalWhatsAppBtn" onclick="triggerModalWhatsAppBuy()">
+<i class="fa-brands fa-whatsapp text-2xl"></i>
+<span>Escolher modelo</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FLOATING WHATSAPP BUTTON (ALWAYS VISIBLE) -->
+<div class="fixed bottom-6 right-6 z-40 group">
+<!-- Hover Tooltip -->
+<div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 hidden sm:flex items-center bg-brand-dark text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-200 pointer-events-none">
+<span>Fale com a Bold Storm</span>
+<div class="w-2 h-2 bg-brand-dark rotate-45 absolute -right-1"></div>
+</div>
+<button class="w-14 h-14 bg-brand-lime hover:bg-yellow-300 text-black rounded-full flex items-center justify-center shadow-xl ring-4 ring-white/80 transform hover:scale-105 transition duration-300" onclick="openGeneralWhatsApp()">
+<i class="fa-brands fa-whatsapp text-3xl"></i>
+</button>
+</div>
+<!-- JAVASCRIPT APP LOGIC & DATA ENGINE -->
+<script>
+        // GLOBAL STORE STATE & PRODUCTS DATASET
+        function formatSizePair(size) {
+            return String(size);
+        }
+
+        function sizeMatchesQuery(size, query) {
+            return String(size).toLowerCase().includes(query);
+        }
+
+        const storePhoneNumber = '351930609690';
+        let activeSelectedSize = null;
+        let currentModalProductId = null;
+
+        // Realistic dataset of 12+ Chuteiras
+        const REAL_IMAGES = {
+            "p1": "assets/img-007-6e884ad76c.jpg",
+            "p2": "assets/img-008-2eb6fef940.jpg",
+            "p3": "assets/img-009-de626a7949.jpg",
+            "p4": "assets/img-010-6c2a01e5df.jpg",
+            "p5": "assets/img-011-1dab36dc0a.jpg",
+            "p6": "assets/img-012-55df80bdad.jpg",
+            "p7": "assets/img-013-1d87df4986.jpg",
+            "p8": "assets/img-014-a8ee97bc0d.jpg",
+            "p9": "assets/img-015-1e79e14010.jpg",
+            "p10": "assets/img-016-190208f25c.jpg",
+            "p11": "assets/img-017-f4ce2a72dd.jpg"
+};
+        const EXTRA_IMAGES = {
+            "p12": "assets/img-018-22c4df39a7.jpg",
+            "p13": "assets/img-019-a54aef3c58.jpg",
+            "p14": "assets/img-020-8f0910e8a8.jpg",
+            "p15": "assets/img-021-5e280470d5.jpg",
+            "p16": "assets/img-022-5f5eabedd5.jpg",
+            "p17": "assets/img-023-04e0cab1a7.jpg",
+            "p18": "assets/img-024-6184ec3790.jpg",
+            "p19": "assets/img-025-c8b3192a01.jpg",
+            "p20": "assets/img-026-93dd8440fd.jpg",
+            "p21": "assets/img-027-ca38b27a45.jpg",
+            "p22": "assets/img-028-ad84280c07.jpg"
+};
+
+        const MORE_IMAGES = {
+            "p23": "assets/img-029-000a565e91.jpg",
+            "p24": "assets/img-030-854e972fe4.jpg",
+            "p25": "assets/img-031-a82b31423f.jpg",
+            "p26": "assets/img-032-3ff54034b8.jpg",
+            "p27": "assets/img-033-e18617973a.jpg",
+            "p28": "assets/img-034-da3960491c.jpg",
+            "p29": "assets/img-035-8cee95ed47.jpg",
+            "p30": "assets/img-036-2dc9319cb6.jpg",
+            "p31": "assets/img-037-c84083e169.jpg"
+};
+        // Novas imagens adicionadas ao catálogo em agosto de 2026
+        const NEW_CATALOG_IMAGES = {
+            "n1": "assets/img-038-a5276f00cb.jpg",
+            "n2": "assets/img-039-871ccb09e5.jpg",
+            "n3": "assets/img-040-82e987d074.jpg",
+            "n4": "assets/img-041-185185382b.jpg",
+            "n5": "assets/img-042-d4b8ddfeff.jpg",
+            "n6": "assets/img-043-257d84e93b.jpg",
+            "n7": "assets/img-044-a823bce3e3.jpg",
+            "n8": "assets/img-045-17048abcfb.jpg",
+            "n9": "assets/img-046-87c4b093f9.jpg",
+            "n10": "assets/img-047-3a9e305ea8.jpg",
+            "n11": "assets/img-048-52c0f8034e.jpg",
+            "n12": "assets/img-049-1b70732791.jpg",
+            "n13": "assets/img-050-8c03719bf0.jpg",
+            "n14": "assets/img-051-2cac35506c.jpg",
+            "n15": "assets/img-052-48012b6af9.jpg",
+            "n16": "assets/img-053-4c106e21ba.jpg",
+            "n17": "assets/img-054-81a24903c1.jpg",
+            "n18": "assets/img-055-ed0f556e07.jpg",
+            "n19": "assets/img-056-33ef03e69a.jpg",
+            "n20": "assets/img-057-10e0178397.jpg",
+            n21: "assets/img-058-340df53b05.jpg",
+            n22: "assets/img-059-08acabc740.jpg",
+            n23: "assets/img-060-e6df49edd0.jpg",
+            n24: "assets/img-061-39abfa1085.jpg",
+            n25: "assets/img-062-dc1fb63985.jpg",
+            n26: "assets/img-063-123cc73173.jpg",
+            n27: "assets/img-064-16532ba36c.jpg",
+            n28: "assets/img-065-038a8552b6.jpg",
+            n29: "assets/img-066-16b5d690e2.jpg",
+            n30: "assets/img-067-d44666ed4a.jpg",
+            n31: "assets/img-068-9652772b82.jpg",
+        };
+
+        const MORE_CATALOG_IMAGES = {
+            "m1": "assets/img-058-340df53b05.jpg",
+            "m2": "assets/img-059-08acabc740.jpg",
+            "m3": "assets/img-060-e6df49edd0.jpg",
+            "m4": "assets/img-061-39abfa1085.jpg",
+            "m5": "assets/img-062-dc1fb63985.jpg",
+            "m6": "assets/img-063-123cc73173.jpg",
+            "m7": "assets/img-064-16532ba36c.jpg",
+            "m8": "assets/img-065-038a8552b6.jpg",
+            "m9": "assets/img-066-16b5d690e2.jpg",
+            "m10": "assets/img-067-d44666ed4a.jpg",
+            "m11": "assets/img-068-9652772b82.jpg",
+        };
+
+        const EXTRA_BATCH_IMAGES = {
+            "b1": "assets/img-061-39abfa1085.jpg",
+            "b2": "assets/img-062-dc1fb63985.jpg",
+            "b3": "assets/img-065-038a8552b6.jpg",
+            "b4": "assets/img-069-486b22e8bc.jpg",
+            "b5": "assets/img-063-123cc73173.jpg",
+            "b6": "assets/img-064-16532ba36c.jpg",
+            "b7": "assets/img-060-e6df49edd0.jpg",
+            "b8": "assets/img-058-340df53b05.jpg",
+            "b9": "assets/img-059-08acabc740.jpg",
+        };
+
+
+        const NEW_UPLOAD_BOOT_IMAGES = {
+            n1: "assets/img-070-38b3f9afed.jpg",
+            n2: "assets/img-071-fac521e64f.jpg",
+            n3: "assets/img-072-14bfb8f2d7.jpg",
+            n4: "assets/img-073-9909244b68.jpg",
+            n5: "assets/img-074-5062bf634c.jpg",
+            n6: "assets/img-075-84559933a7.jpg",
+            n7: "assets/img-076-37674beb66.jpg",
+            n8: "assets/img-077-abc4325909.jpg",
+            n9: "assets/img-078-102ce6cc1b.jpg",
+            n10: "assets/img-079-80a7f2f003.jpg",
+            n11: "assets/img-002-fe0fbfa4e1.jpg",
+            n12: "assets/img-080-6208a6d424.jpg",
+            n13: "assets/img-081-31d0b50806.jpg",
+            n14: "assets/img-082-8aa2c35fd8.jpg",
+            n15: "assets/img-083-d75db48db4.jpg"
+        };
+
+
+        const AUGUST_12_BOOT_IMAGES = {
+            u1: "assets/img-003-53e50d9f50.jpg",
+            u2: "assets/img-084-cc23fce471.jpg",
+            u3: "assets/img-085-8b1c169062.jpg",
+            u4: "assets/img-086-949ac1bd68.jpg",
+            u5: "assets/img-087-1de3e64059.jpg",
+            u6: "assets/img-088-95ba1f263b.jpg",
+            u7: "assets/img-003-53e50d9f50.jpg",
+            u8: "assets/img-089-f46e2fd73a.jpg"
+        };
+
+        const BEST_SELLER_IMAGES = {
+            nike: "assets/img-003-53e50d9f50.jpg",
+            adidas: "assets/img-004-b0b24c75f7.jpg"
+        };
+
+        const PRODUCTS_DATA = [
+
+            {
+                id: "p84",
+                name: "Nike Mercurial Vapor Rosa/Branco/Preto FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "mais-vendida",
+                tags: ["lancamento", "mais-vendida"],
+                tagLabel: "Mais Vendida",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: BEST_SELLER_IMAGES.nike,
+                img2: AUGUST_12_BOOT_IMAGES.u7,
+                desc: "Mercurial em rosa vibrante, branco e preto, com construção leve e perfil agressivo para velocidade, arrancadas e mudanças rápidas de direção.",
+            },
+            {
+                id: "p91",
+                name: "Adidas Branco / Rosa / Azul FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "mais-vendida",
+                tags: ["mais-vendida"],
+                tagLabel: "Mais Vendida",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: BEST_SELLER_IMAGES.adidas,
+                img2: BEST_SELLER_IMAGES.adidas,
+                desc: "Modelo Adidas em branco com detalhes rosa e azul, visual premium e construção voltada para velocidade, leveza e resposta rápida em campo.",
+            },
+
+            {
+                id: "p85",
+                name: "Nike Tiempo Legend Branco/Vermelho Metálico FG",
+                brand: "Nike",
+                model: "Tiempo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "lancamento",
+                tags: ["lancamento"],
+                tagLabel: "Lançamento",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: AUGUST_12_BOOT_IMAGES.u2,
+                img2: AUGUST_12_BOOT_IMAGES.u2,
+                desc: "Tiempo Legend em branco com detalhes vermelhos e Swoosh metálico, combinando conforto, toque preciso e estabilidade para controle de bola.",
+            },
+            {
+                id: "p86",
+                name: "Nike Tiempo Legend Cinza/Vermelho FG",
+                brand: "Nike",
+                model: "Tiempo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "lancamento",
+                tags: ["lancamento"],
+                tagLabel: "Lançamento",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: AUGUST_12_BOOT_IMAGES.u3,
+                img2: AUGUST_12_BOOT_IMAGES.u3,
+                desc: "Tiempo Legend em cinza com detalhes vermelhos, visual moderno e construção voltada para conforto, domínio e precisão em campo.",
+            },
+            {
+                id: "p87",
+                name: "Nike Hypervenom Phantom Verde Neon/Preto FG",
+                brand: "Nike",
+                model: "Hypervenom",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "lancamento",
+                tags: ["lancamento"],
+                tagLabel: "Lançamento",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: AUGUST_12_BOOT_IMAGES.u4,
+                img2: AUGUST_12_BOOT_IMAGES.u4,
+                desc: "Hypervenom Phantom em verde neon com detalhes pretos e turquesa, feita para agilidade, tração e finalizações rápidas.",
+            },
+            {
+                id: "p88",
+                name: "Nike Mercurial Vapor Vermelho/Rosa/Preto FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "lancamento",
+                tags: ["lancamento"],
+                tagLabel: "Lançamento",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: AUGUST_12_BOOT_IMAGES.u5,
+                img2: AUGUST_12_BOOT_IMAGES.u5,
+                desc: "Mercurial Vapor em vermelho e rosa com detalhes pretos, perfil de velocidade e acabamento marcante para jogadores explosivos.",
+            },
+            {
+                id: "p89",
+                name: "Nike Mercurial Vapor Rosa/Branco FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "lancamento",
+                tags: ["lancamento"],
+                tagLabel: "Lançamento",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: AUGUST_12_BOOT_IMAGES.u6,
+                img2: AUGUST_12_BOOT_IMAGES.u6,
+                desc: "Mercurial Vapor em rosa e branco com detalhes pretos, cabedal leve e visual de alta velocidade para campo.",
+            },
+            {
+                id: "p90",
+                name: "Nike Air Zoom Mercurial Vapor Azul/Rosa/Branco FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "lancamento",
+                tags: ["lancamento"],
+                tagLabel: "Lançamento",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: AUGUST_12_BOOT_IMAGES.u8,
+                img2: AUGUST_12_BOOT_IMAGES.u8,
+                desc: "Air Zoom Mercurial Vapor em azul com Swoosh branco e rosa, projetada para resposta rápida, aceleração e tração em campo.",
+            },
+
+            {
+                id: "p70",
+                name: "Mizuno Morelia Neo Azul/Ciano FG",
+                brand: "Mizuno",
+                model: "Morelia Neo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n1,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n1,
+                desc: "Chuteira Mizuno em azul e ciano, com construção de perfil leve e configuração para campo.",
+            },
+            {
+                id: "p71",
+                name: "Mizuno Alpha Branco/Rosa FG",
+                brand: "Mizuno",
+                model: "Alpha",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n2,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n4,
+                desc: "Mizuno Alpha em branco com detalhes rosa e laranja. As duas fotos enviadas deste mesmo colorway foram reunidas na galeria do produto.",
+            },
+            {
+                id: "p72",
+                name: "Mizuno Morelia Neo Japan Preto/Multicolor FG",
+                brand: "Mizuno",
+                model: "Morelia Neo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n3,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n3,
+                desc: "Mizuno Morelia Neo em preto com detalhes multicoloridos e visual inspirado na linha Japan.",
+            },
+            {
+                id: "p73",
+                name: "Mizuno Morelia Neo Japan Vermelho/Preto FG",
+                brand: "Mizuno",
+                model: "Morelia Neo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n5,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n5,
+                desc: "Mizuno Morelia Neo em vermelho com detalhes pretos, apresentada em configuração para campo.",
+            },
+            {
+                id: "p74",
+                name: "Mizuno Alpha Branco/Dourado/Azul FG",
+                brand: "Mizuno",
+                model: "Alpha",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "edicao-limitada",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n6,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n6,
+                desc: "Mizuno Alpha branca com acabamento dourado e detalhes azulados, em visual de edição especial.",
+            },
+            {
+                id: "p75",
+                name: "Mizuno Morelia Neo Branco/Vermelho FG",
+                brand: "Mizuno",
+                model: "Morelia Neo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n7,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n7,
+                desc: "Mizuno Morelia Neo branca com detalhes vermelhos e solado vibrante para uso em campo.",
+            },
+            {
+                id: "p76",
+                name: "Puma King Branco/Preto/Vermelho FG",
+                brand: "Puma",
+                model: "King",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n8,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n8,
+                desc: "Puma King em branco com detalhes pretos e vermelhos, com configuração de travas para campo.",
+            },
+            {
+                id: "p77",
+                name: "Mizuno Morelia Neo Preto/Azul/Laranja FG",
+                brand: "Mizuno",
+                model: "Morelia Neo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n9,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n9,
+                desc: "Mizuno em base preta com detalhes azuis e laranja, combinando visual marcante e perfil de alta performance.",
+            },
+            {
+                id: "p78",
+                name: "Mizuno Alpha Azul Claro/Metalizado FG",
+                brand: "Mizuno",
+                model: "Alpha",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n10,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n10,
+                desc: "Mizuno Alpha em azul claro com acabamento metalizado, criada para um visual leve e moderno em campo.",
+            },
+            {
+                id: "p79",
+                name: "Puma Ultra Preto/Azul FG",
+                brand: "Puma",
+                model: "Ultra",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n11,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n11,
+                desc: "Puma Ultra preta com detalhes azulados e solado translúcido, em configuração para campo.",
+            },
+            {
+                id: "p80",
+                name: "Puma Ultra Rosa/Azul FG",
+                brand: "Puma",
+                model: "Ultra",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n12,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n12,
+                desc: "Puma Ultra em rosa com transição azul e acabamento vibrante para campo.",
+            },
+            {
+                id: "p81",
+                name: "Puma Ultra Rosa Edição Especial FG",
+                brand: "Puma",
+                model: "Ultra",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "edicao-limitada",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n13,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n13,
+                desc: "Puma Ultra rosa em edição especial, com detalhes gráficos no cabedal e solado multicolorido.",
+            },
+            {
+                id: "p82",
+                name: "Puma Future Azul/Rosa FG",
+                brand: "Puma",
+                model: "Future",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n14,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n14,
+                desc: "Puma Future azul com detalhes rosa, apresentada em uso no gramado natural.",
+            },
+            {
+                id: "p83",
+                name: "Puma Ultra Branco/Vermelho FG",
+                brand: "Puma",
+                model: "Ultra",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_UPLOAD_BOOT_IMAGES.n15,
+                img2: NEW_UPLOAD_BOOT_IMAGES.n15,
+                desc: "Puma Ultra em branco e vermelho, com contraste preto e solado vermelho para campo.",
+            },
+            {
+                id: "p60",
+                name: "Adidas Predator Elite FT Branco/Azul/Vermelho FG",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_BATCH_IMAGES.b8,
+                img2: EXTRA_BATCH_IMAGES.b8,
+                desc: "Predator Elite com língua dobrável, acabamento branco e detalhes em azul e vermelho para controle e precisão em campo.",
+            },
+            {
+                id: "p61",
+                name: "Adidas F50 Elite Laceless Amarelo Neon FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_BATCH_IMAGES.b9,
+                img2: EXTRA_BATCH_IMAGES.b9,
+                desc: "F50 Elite sem cadarço em amarelo neon, criada para jogadores que buscam leveza, velocidade e visual marcante.",
+            },
+            {
+                id: "p62",
+                name: "Nike Tiempo Legend Elite Azul Claro/Rose Gold FG",
+                brand: "Nike",
+                model: "Tiempo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_BATCH_IMAGES.b7,
+                img2: MORE_CATALOG_IMAGES.m11,
+                desc: "Tiempo Legend Elite em azul claro com Swoosh rose gold, combinando toque confortável, estabilidade e acabamento premium.",
+            },
+            {
+                id: "p63",
+                name: "Adidas Predator Elite Laceless Branco/Lilás/Neon FG",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_BATCH_IMAGES.b1,
+                img2: EXTRA_BATCH_IMAGES.b2,
+                desc: "Predator Elite laceless em branco com detalhes lilás, azul e amarelo neon, oferecendo ajuste limpo e excelente controle de bola.",
+            },
+            {
+                id: "p64",
+                name: "Nike Tiempo Legend Elite Preto/Bronze FG",
+                brand: "Nike",
+                model: "Tiempo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_CATALOG_IMAGES.m6,
+                img2: EXTRA_BATCH_IMAGES.b5,
+                desc: "Tiempo Legend Elite em preto e bronze com detalhes vibrantes, ideal para quem procura conforto, toque preciso e elegância.",
+            },
+            {
+                id: "p65",
+                name: "Adidas Predator Elite FT Rosa/Prata FG",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_BATCH_IMAGES.b6,
+                img2: EXTRA_BATCH_IMAGES.b6,
+                desc: "Predator Elite com língua dobrável em rosa vibrante e detalhes prateados, desenvolvida para controle e precisão nas finalizações.",
+            },
+            {
+                id: "p66",
+                name: "Nike Mercurial Vapor Elite Vermelho/Roxo FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_BATCH_IMAGES.b3,
+                img2: EXTRA_BATCH_IMAGES.b3,
+                desc: "Mercurial Vapor Elite em vermelho intenso com Swoosh roxo, projetada para aceleração, leveza e mudanças rápidas de direção.",
+            },
+            {
+                id: "p67",
+                name: "Adidas F50 Elite Rosa/Preto FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_CATALOG_IMAGES.m9,
+                img2: MORE_CATALOG_IMAGES.m9,
+                desc: "F50 Elite em rosa e preto com placa translúcida, oferecendo resposta rápida e excelente tração para jogadores velozes.",
+            },
+            {
+                id: "p68",
+                name: "Nike Tiempo Legend Elite Azul Tiffany FG",
+                brand: "Nike",
+                model: "Tiempo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_CATALOG_IMAGES.m10,
+                img2: MORE_CATALOG_IMAGES.m10,
+                desc: "Tiempo Legend Elite em azul Tiffany com Swoosh branco e rosa, unindo conforto, controle e um visual exclusivo.",
+            },
+            {
+                id: "p69",
+                name: "Nike Mercurial Vapor Elite Laranja/Branco FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_BATCH_IMAGES.b4,
+                img2: EXTRA_BATCH_IMAGES.b4,
+                desc: "Mercurial Vapor Elite em laranja vibrante com Swoosh branco, feita para velocidade, explosão e arrancadas rápidas em campo.",
+            },
+
+            {
+                id: "p32",
+                name: "Nike Air Zoom Mercurial Vapor Branco/Turquesa/Roxo FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n1,
+                img2: NEW_CATALOG_IMAGES.n1,
+                desc: "Modelo de velocidade com unidade Air Zoom, cabedal leve e combinação em branco, turquesa e roxo para máxima resposta em campo.",
+            },
+            {
+                id: "p33",
+                name: "Nike Mercurial Vapor Branco Multicolor FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Performance",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n2,
+                img2: NEW_CATALOG_IMAGES.n2,
+                desc: "Mercurial de perfil baixo com construção leve, ajuste firme e detalhes multicoloridos para jogadores rápidos e decisivos.",
+            },
+            {
+                id: "p34",
+                name: "Nike Mercurial Superfly Azul/Volt FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n3,
+                img2: NEW_CATALOG_IMAGES.n3,
+                desc: "Versão de cano alto com ajuste anatômico, estrutura leve e acabamento azul com detalhes volt para aceleração explosiva.",
+            },
+            {
+                id: "p35",
+                name: "Adidas Predator Elite Branco/Vermelho/Preto FG",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n4,
+                img2: NEW_CATALOG_IMAGES.n4,
+                desc: "Predator Elite com zonas de contato texturizadas para controle, precisão e potência nos passes e finalizações.",
+            },
+            {
+                id: "p36",
+                name: "Adidas Predator Elite Preto/Branco/Vermelho FG",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n5,
+                img2: NEW_CATALOG_IMAGES.n5,
+                desc: "Predator em preto com detalhes brancos e vermelhos, desenvolvida para controle seguro e chutes com maior efeito.",
+            },
+            {
+                id: "p37",
+                name: "Nike Mercurial Vapor Flyknit Laranja/Branco FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Performance",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n6,
+                img2: NEW_CATALOG_IMAGES.n6,
+                desc: "Cabedal Flyknit leve e flexível, com ajuste próximo ao pé e visual laranja de alta visibilidade para jogadas rápidas.",
+            },
+            {
+                id: "p38",
+                name: "Nike Air Zoom Mercurial Superfly Rosa/Volt FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n7,
+                img2: NEW_CATALOG_IMAGES.n7,
+                desc: "Mercurial Superfly com Air Zoom, cano elástico e combinação rosa e volt criada para velocidade e mudanças rápidas de direção.",
+            },
+            {
+                id: "p39",
+                name: "Adidas F50 Elite Laceless Rosa/Verde/Roxo FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n8,
+                img2: NEW_CATALOG_IMAGES.n8,
+                desc: "F50 sem cadarço com estrutura aerodinâmica e visual vibrante, ideal para aceleração e movimentos agressivos no ataque.",
+            },
+            {
+                id: "p40",
+                name: "Adidas F50 Elite Laceless Preto/Azul FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n9,
+                img2: NEW_CATALOG_IMAGES.n9,
+                desc: "F50 Elite laceless em preto e azul, com ajuste limpo e construção leve para máxima velocidade em campo.",
+            },
+            {
+                id: "p41",
+                name: "Adidas X Speedportal Laceless Turquesa/Roxo FG",
+                brand: "Adidas",
+                model: "X",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n10,
+                img2: NEW_CATALOG_IMAGES.n11,
+                desc: "Modelo laceless da linha X com design turquesa e roxo, solado de alta resposta e duas fotos reais para conferir todos os detalhes.",
+            },
+            {
+                id: "p42",
+                name: "Nike Hypervenom Phantom Preto/Laranja FG",
+                brand: "Nike",
+                model: "Hypervenom",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Clássico Premium",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n12,
+                img2: NEW_CATALOG_IMAGES.n12,
+                desc: "Hypervenom em preto e laranja com textura agressiva no cabedal, criada para tração, agilidade e finalizações rápidas.",
+            },
+            {
+                id: "p43",
+                name: "Adidas Predator Elite Leopard Roxo/Amarelo FG",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n13,
+                img2: NEW_CATALOG_IMAGES.n13,
+                desc: "Predator de edição especial com estampa leopard, detalhes amarelos e solado iridescente para um visual exclusivo.",
+            },
+            {
+                id: "p44",
+                name: "Adidas F50 Elite Branco/Verde Neon FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Performance",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n14,
+                img2: NEW_CATALOG_IMAGES.n14,
+                desc: "F50 branca com detalhes em verde neon, perfil leve e solado preparado para arranques e mudanças rápidas de direção.",
+            },
+            {
+                id: "p45",
+                name: "Nike Tiempo Legend Branco/Turquesa/Rosa FG",
+                brand: "Nike",
+                model: "Tiempo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Clássico Premium",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n15,
+                img2: NEW_CATALOG_IMAGES.n15,
+                desc: "Tiempo Legend com toque confortável, ajuste clássico e acabamento branco com detalhes turquesa e rosa.",
+            },
+            {
+                id: "p46",
+                name: "Nike Mercurial Vapor Azul/Vermelho FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Performance",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n16,
+                img2: NEW_CATALOG_IMAGES.n16,
+                desc: "Mercurial Vapor com combinação azul e vermelha, cabedal leve e solado responsivo para jogadores de velocidade.",
+            },
+            {
+                id: "p47",
+                name: "Adidas F50 Elite Branco/Rosa/Azul FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n17,
+                img2: NEW_CATALOG_IMAGES.n17,
+                desc: "F50 Elite em branco, rosa e azul com construção ultraleve e solado desenvolvido para aceleração de alto nível.",
+            },
+            {
+                id: "p48",
+                name: "Nike Mercurial Vapor Vermelho/Cromado FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n18,
+                img2: NEW_CATALOG_IMAGES.n18,
+                desc: "Mercurial de perfil baixo em vermelho intenso com Swoosh cromado, focada em velocidade e resposta imediata.",
+            },
+            {
+                id: "p49",
+                name: "Nike Phantom GX Vermelho/Preto FG",
+                brand: "Nike",
+                model: "Phantom",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n19,
+                img2: NEW_CATALOG_IMAGES.n19,
+                desc: "Phantom GX com cabedal de controle e combinação vermelho e preto para precisão em passes, dribles e finalizações.",
+            },
+            {
+                id: "p50",
+                name: "Adidas F50 Elite Vermelho/Preto/Dourado FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: NEW_CATALOG_IMAGES.n20,
+                img2: NEW_CATALOG_IMAGES.n20,
+                desc: "F50 Elite em vermelho, preto e dourado, apresentada com caixa e acessórios para uma experiência premium.",
+            },
+            {
+                id: "p1",
+                name: "Adidas F50 Elite Laceless Branco/Rosa/Azul",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p1,
+                img2: REAL_IMAGES.p1,
+                desc: "O retorno da lendária linha F50 com solado Sprintframe 360 ultraleve para velocidade inigualável nos primeiros metros.",
+            },
+            {
+                id: "p2",
+                name: "Adidas Predator Elite FT Branco/Rosa",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p2,
+                img2: REAL_IMAGES.p2,
+                desc: "Com lingueta dobrável clássica e aletas de borracha Strikeskin estrategicamente posicionadas para máximo efeito no chute.",
+            },
+            {
+                id: "p3",
+                name: "Nike Mercurial Vapor Laranja FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p3,
+                img2: REAL_IMAGES.p3,
+                desc: "Chuteira de alta performance com unidade Zoom Air exclusiva de três quartos. Desenvolvida para máxima aceleração e mudança rápida de direção em campos de grama natural.",
+            },
+            {
+                id: "p4",
+                name: "Adidas F50 Elite Branco Neon FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p4,
+                img2: REAL_IMAGES.p4,
+                desc: "O retorno da lendária linha F50 com solado Sprintframe 360 ultraleve para velocidade inigualável nos primeiros metros.",
+            },
+            {
+                id: "p5",
+                name: "Nike Phantom Castanho/Dourado FG",
+                brand: "Nike",
+                model: "Phantom",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p5,
+                img2: REAL_IMAGES.p5,
+                desc: "Tecnologia Nike Gripknit inovadora cobrindo a área de contato da bola para controle absurdo em condições secas ou molhadas.",
+            },
+            {
+                id: "p6",
+                name: "Nike Mercurial Vapor Aqua/Preto FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p6,
+                img2: REAL_IMAGES.p6,
+                desc: "Chuteira de alta performance com unidade Zoom Air exclusiva de três quartos. Desenvolvida para máxima aceleração e mudança rápida de direção em campos de grama natural.",
+            },
+            {
+                id: "p7",
+                name: "Adidas Predator Multicolor Limited FG",
+                brand: "Adidas",
+                model: "Predator",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p7,
+                img2: REAL_IMAGES.p7,
+                desc: "Com lingueta dobrável clássica e aletas de borracha Strikeskin estrategicamente posicionadas para máximo efeito no chute.",
+            },
+            {
+                id: "p8",
+                name: "Nike Mercurial Vapor Volt FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p8,
+                img2: REAL_IMAGES.p8,
+                desc: "Chuteira de alta performance com unidade Zoom Air exclusiva de três quartos. Desenvolvida para máxima aceleração e mudança rápida de direção em campos de grama natural.",
+            },
+            {
+                id: "p9",
+                name: "Puma Ultra MDS Verde Neon FG",
+                brand: "Puma",
+                model: "Ultra",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Performance",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p9,
+                img2: REAL_IMAGES.p9,
+                desc: "Construção leve e agressiva para arranques de alta performance e máxima explosão nos primeiros passos.",
+            },
+            {
+                id: "p10",
+                name: "Nike Zoom Mercurial Branco/Vermelho FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p10,
+                img2: REAL_IMAGES.p10,
+                desc: "Chuteira de alta performance com unidade Zoom Air exclusiva de três quartos. Desenvolvida para máxima aceleração e mudança rápida de direção em campos de grama natural.",
+            },
+            {
+                id: "p11",
+                name: "Nike Mercurial Vapor Prism Preto FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: REAL_IMAGES.p11,
+                img2: REAL_IMAGES.p11,
+                desc: "Chuteira de alta performance com unidade Zoom Air exclusiva de três quartos. Desenvolvida para máxima aceleração e mudança rápida de direção em campos de grama natural.",
+            },
+            {
+                id: "p12",
+                name: "Nike Mercurial Superfly Branco/Rosa FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p12,
+                img2: EXTRA_IMAGES.p12,
+                desc: "Versão com ajuste anatômico e resposta explosiva para jogadores que priorizam velocidade e arranque.",
+            },
+            {
+                id: "p13",
+                name: "Adidas F50 Elite Azul/Rosa/Neon FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p13,
+                img2: EXTRA_IMAGES.p13,
+                desc: "Silhueta ultraleve da linha F50, ideal para aceleração máxima e mudanças rápidas de direção.",
+            },
+            {
+                id: "p14",
+                name: "Puma Ultra Branco Perolado FG",
+                brand: "Puma",
+                model: "Ultra",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p14,
+                img2: EXTRA_IMAGES.p14,
+                desc: "Construção extremamente leve com acabamento perolado e foco total em velocidade de elite.",
+            },
+            {
+                id: "p15",
+                name: "Adidas F50 Camuflada Rosa/Azul FG",
+                brand: "Adidas",
+                model: "F50",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p15,
+                img2: EXTRA_IMAGES.p15,
+                desc: "Visual exclusivo e estrutura leve para performance agressiva desde o primeiro passo.",
+            },
+            {
+                id: "p16",
+                name: "Nike Mercurial Branco/Dourado FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p16,
+                img2: EXTRA_IMAGES.p16,
+                desc: "Mercurial com acabamento branco e dourado, criada para aceleração e resposta imediata no campo.",
+            },
+            {
+                id: "p17",
+                name: "Nike Air Zoom Mercurial Preto/Laranja FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p17,
+                img2: EXTRA_IMAGES.p17,
+                desc: "Design agressivo com tecnologia Air Zoom, ideal para jogadores rápidos e decisivos.",
+            },
+            {
+                id: "p18",
+                name: "Nike Phantom GX Creme/Preto/Verde FG",
+                brand: "Nike",
+                model: "Phantom",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Performance",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p18,
+                img2: EXTRA_IMAGES.p18,
+                desc: "Modelo focado em controle refinado, toque preciso e segurança em ações rápidas com a bola.",
+            },
+            {
+                id: "p19",
+                name: "Nike Mercurial Vapor Rosa Claro United FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p19,
+                img2: EXTRA_IMAGES.p19,
+                desc: "Chuteira leve e veloz com visual especial da linha United, feita para explosão e agilidade.",
+            },
+            {
+                id: "p20",
+                name: "Nike Mercurial Vapor Aqua United FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p20,
+                img2: EXTRA_IMAGES.p20,
+                desc: "Versão United com acabamento aqua e coral, ideal para velocidade e movimentos curtos com precisão.",
+            },
+            {
+                id: "p21",
+                name: "Nike Mercurial Vapor Pink Blast FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p21,
+                img2: EXTRA_IMAGES.p21,
+                desc: "Cabedal leve e firme com visual marcante, desenvolvido para atacar espaços com muita rapidez.",
+            },
+            {
+                id: "p22",
+                name: "Adidas X Crazyfast Laceless Azul/Rosa FG",
+                brand: "Adidas",
+                model: "X Crazyfast",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: EXTRA_IMAGES.p22,
+                img2: EXTRA_IMAGES.p22,
+                desc: "Estrutura sem cadarço e design moderno para sensação limpa na bola e velocidade de alto nível.",
+            },
+            {
+                id: "p23",
+                name: "Nike Mercurial Air Zoom Peach/Blue FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p23,
+                img2: MORE_IMAGES.p23,
+                desc: "Modelo com visual peach e azul, criado para velocidade, tração agressiva e mudanças rápidas de direção.",
+            },
+            {
+                id: "p24",
+                name: "Nike Mercurial Vapor Preto Rainbow FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p24,
+                img2: MORE_IMAGES.p24,
+                desc: "Cabedal preto com detalhes degradê e solado iridescente, perfeito para atletas explosivos e velozes.",
+            },
+            {
+                id: "p25",
+                name: "Nike Mercurial Superfly Branco/Lilás FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p25,
+                img2: MORE_IMAGES.p25,
+                desc: "Versão de cano alto com acabamento branco e lilás, oferecendo ajuste firme e aceleração de elite.",
+            },
+            {
+                id: "p26",
+                name: "Nike Mercurial Superfly Rosa/Preto FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p26,
+                img2: MORE_IMAGES.p26,
+                desc: "Mercurial vibrante com estrutura leve, ideal para jogadores que buscam arranque e visual marcante.",
+            },
+            {
+                id: "p27",
+                name: "Nike Mercurial Blueprint Branco FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "edicao-limitada",
+                tagLabel: "Edição Limitada",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p27,
+                img2: MORE_IMAGES.p27,
+                desc: "Edição especial blueprint em branco com graphics técnicos e excelente resposta em campo.",
+            },
+            {
+                id: "p28",
+                name: "Nike Tiempo Marrom/Amarelo FG",
+                brand: "Nike",
+                model: "Tiempo",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "classica",
+                tagLabel: "Clássica",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p28,
+                img2: MORE_IMAGES.p28,
+                desc: "Modelo clássico com visual marrom e amarelo, focado em conforto, toque refinado e tradição.",
+            },
+            {
+                id: "p29",
+                name: "Nike Mercurial MDS Rosa/Azul FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Performance",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p29,
+                img2: MORE_IMAGES.p29,
+                desc: "Visual MDS com mistura de tons rosa e azul, desenvolvido para explosão, leveza e agilidade.",
+            },
+            {
+                id: "p30",
+                name: "Nike Mercurial Vapor Turquesa FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "destaque",
+                tagLabel: "Destaque",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p30,
+                img2: MORE_IMAGES.p30,
+                desc: "Versão turquesa com detalhes em amarelo e vermelho, ideal para quem quer velocidade e destaque.",
+            },
+            {
+                id: "p31",
+                name: "Nike Mercurial Air Zoom Laranja FG",
+                brand: "Nike",
+                model: "Mercurial",
+                pitch: "Campo FG",
+                price: null,
+                oldPrice: null,
+                condition: "Novo na Caixa",
+                tag: "promocao",
+                tagLabel: "Oferta Exclusiva",
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                img1: MORE_IMAGES.p31,
+                img2: MORE_IMAGES.p31,
+                desc: "Mercurial laranja vibrante com tecnologia Air Zoom, feita para máxima aceleração e tração.",
+            },
+        ];
+
+        // Active filter state variables
+        let currentProducts = [...PRODUCTS_DATA];
+
+        // INITIALIZATION
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProductsGrid(PRODUCTS_DATA);
+        });
+
+        // WHATSAPP URL GENERATOR
+        function formatWhatsAppUrl(customMessage) {
+            const cleanPhone = storePhoneNumber.replace(/\D/g, '');
+            return `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodeURIComponent(customMessage)}`;
+        }
+
+        function openGeneralWhatsApp() {
+            const msg = "Olá! Vim pelo site da Bold Storm e gostaria de ajuda para escolher uma chuteira.";
+            window.open(formatWhatsAppUrl(msg), '_blank');
+        }
+
+        function openWhatsAppForProduct(productName, size, price) {
+            const sizeText = size ? `, no tamanho ${size}` : '';
+            const priceText = price ? ` no valor de ${price}` : '';
+            const msg = `Olá! Vim pelo site e gostaria de saber mais sobre a chuteira ${productName}${sizeText}${priceText}. Ela está disponível para envio?`;
+            window.open(formatWhatsAppUrl(msg), '_blank');
+        }
+
+        // RENDER PRODUCTS GRID ENGINE
+        function renderProductsGrid(products) {
+            const grid = document.getElementById('productGrid');
+            const noResults = document.getElementById('noResults');
+            const countLabel = document.getElementById('productsCountLabel');
+
+            countLabel.textContent = `Exibindo ${products.length} modelos disponíveis`;
+
+            if (!products || products.length === 0) {
+                grid.innerHTML = '';
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            noResults.classList.add('hidden');
+            
+            grid.innerHTML = products.map(p => {
+                const installments = (p.price / 10).toFixed(2).replace('.', ',');
+                const formattedPrice = p.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                const formattedOldPrice = p.oldPrice ? p.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : '';
+
+                return `
+                <div class="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    
+                    <!-- Top Image Area with Hover Switch -->
+                    <div class="relative bg-slate-900 h-72 sm:h-80 p-4 flex items-center justify-center overflow-hidden cursor-pointer" onclick="openProductModal('${p.id}')">
+                        <span class="absolute top-3 left-3 bg-brand-lime text-black font-extrabold text-[10px] uppercase px-2.5 py-1 rounded-md z-10">
+                            ${p.tagLabel || p.brand}
+                        </span>
+                        
+                        <img src="${p.img1}" class="w-full h-full object-contain group-hover:scale-105 transition duration-500" alt="${p.name}">
+                        
+                        <span class="absolute bottom-3 right-3 text-[10px] font-bold text-slate-300 bg-slate-800/80 px-2 py-0.5 rounded backdrop-blur">
+                            ${p.pitch}
+                        </span>
+                    </div>
+
+                    <!-- Details Content -->
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] font-bold text-slate-400 mb-1">
+                                <span>${p.brand}</span>
+                                <span class="text-brand-limeDark">${p.condition}</span>
+                            </div>
+
+                            <h3 onclick="openProductModal('${p.id}')" class="font-heading font-extrabold text-base sm:text-lg text-slate-900 group-hover:text-brand-limeDark transition cursor-pointer line-clamp-2">
+                                ${p.name}
+                            </h3>
+
+                            <!-- Sizes pills preview -->
+                            <div class="mt-3 flex flex-wrap gap-1">
+                                ${p.sizes.slice(0, 4).map(s => `<span class="text-[10px] sm:text-xs font-extrabold bg-slate-100 text-slate-700 px-2 py-1 rounded">${formatSizePair(s)}</span>`).join('')}
+                                ${p.sizes.length > 4 ? `<span class="text-[10px] font-bold text-slate-400 align-middle">+${p.sizes.length - 4}</span>` : ''}
+                            </div>
+                        </div>
+
+                        <!-- Pricing & CTA Row -->
+                        <div class="mt-5 pt-4 border-t border-slate-100">
+                            <div class="mb-3">
+                                ${formattedOldPrice ? `<span class="text-[11px] text-slate-400 line-through block">${formattedOldPrice}</span>` : ''}
+                                <div class="font-heading font-black text-xl text-slate-900">${formattedPrice}</div>
+                                <span class="text-[10px] text-slate-500 font-semibold block">10x de R$ ${installments} sem juros</span>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="openProductModal('${p.id}')" class="py-3.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs rounded-xl transition text-center">
+                                    Ver Detalhes
+                                </button>
+                                <button onclick="openProductModal('${p.id}')" class="py-3.5 px-3 bg-brand-lime hover:bg-yellow-300 text-black font-extrabold text-xs rounded-xl transition flex items-center justify-center gap-1 shadow-md">
+                                    <i class="fa-brands fa-whatsapp text-sm"></i> Escolher modelo
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                `;
+            }).join('');
+        }
+
+        // FILTER FUNCTIONS
+        function updateBadgeLabel(text) {
+            document.getElementById('activeFilterBadge').textContent = text;
+        }
+
+        function filterByAll() {
+            currentProducts = [...PRODUCTS_DATA];
+            updateBadgeLabel('Todos os Produtos');
+            renderProductsGrid(currentProducts);
+        }
+
+        function filterByBrand(brand) {
+            currentProducts = PRODUCTS_DATA.filter(p => p.brand.toLowerCase() === brand.toLowerCase());
+            updateBadgeLabel(`Marca: ${brand}`);
+            renderProductsGrid(currentProducts);
+            scrollToCatalog();
+        }
+
+        function filterByModel(modelKey) {
+            currentProducts = PRODUCTS_DATA.filter(p => p.model.toLowerCase().includes(modelKey.toLowerCase()));
+            updateBadgeLabel(`Modelo: ${modelKey}`);
+            renderProductsGrid(currentProducts);
+            scrollToCatalog();
+        }
+
+        function filterByPitch(pitch) {
+            currentProducts = PRODUCTS_DATA.filter(p => p.pitch.toLowerCase() === pitch.toLowerCase());
+            updateBadgeLabel(`Campo: ${pitch}`);
+            renderProductsGrid(currentProducts);
+            scrollToCatalog();
+        }
+
+        function filterBySize(size) {
+            currentProducts = PRODUCTS_DATA.filter(p => p.sizes.includes(size));
+            updateBadgeLabel(`Tamanho: ${formatSizePair(size)}`);
+            renderProductsGrid(currentProducts);
+            scrollToCatalog();
+        }
+
+        function filterByTag(tag) {
+            currentProducts = PRODUCTS_DATA.filter(p => p.tag === tag || (Array.isArray(p.tags) && p.tags.includes(tag)));
+            updateBadgeLabel(tag === 'lancamento' ? 'Lançamentos' : 'Mais Vendidas');
+            renderProductsGrid(currentProducts);
+            scrollToCatalog();
+        }
+
+        function filterByCategory(category) {
+            if (category === 'seminova') {
+                currentProducts = PRODUCTS_DATA.filter(p => p.condition.toLowerCase().includes('seminova'));
+                updateBadgeLabel('Chuteiras Seminovas');
+            } else if (category === 'acessorios') {
+                updateBadgeLabel('Acessórios');
+            }
+            renderProductsGrid(currentProducts);
+        }
+
+        function handleSearch(query) {
+            if (!query.trim()) {
+                currentProducts = [...PRODUCTS_DATA];
+            } else {
+                const q = query.toLowerCase();
+                currentProducts = PRODUCTS_DATA.filter(p => 
+                    p.name.toLowerCase().includes(q) ||
+                    p.brand.toLowerCase().includes(q) ||
+                    p.model.toLowerCase().includes(q) ||
+                    p.pitch.toLowerCase().includes(q) ||
+                    p.sizes.some(s => sizeMatchesQuery(s, q))
+                );
+            }
+            updateBadgeLabel(`Busca: "${query}"`);
+            renderProductsGrid(currentProducts);
+        }
+
+        function sortProducts(criteria) {
+            if (criteria === 'price-asc') {
+                currentProducts.sort((a, b) => a.price - b.price);
+            } else if (criteria === 'price-desc') {
+                currentProducts.sort((a, b) => b.price - a.price);
+            } else if (criteria === 'name-asc') {
+                currentProducts.sort((a, b) => a.name.localeCompare(b.name));
+            } else if (criteria === 'recent') {
+                currentProducts.sort((a, b) => ((a.tag === 'lancamento' || (Array.isArray(a.tags) && a.tags.includes('lancamento'))) ? -1 : 1));
+            } else {
+                currentProducts = [...PRODUCTS_DATA];
+            }
+            renderProductsGrid(currentProducts);
+        }
+
+        function scrollToCatalog() {
+            document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // PRODUCT DETAIL MODAL MANAGEMENT
+        function openProductModal(productId) {
+            const product = PRODUCTS_DATA.find(p => p.id === productId);
+            if (!product) return;
+
+            currentModalProductId = productId;
+            activeSelectedSize = null; // Reset size selection
+
+            // Populate Modal Fields
+            document.getElementById('modalMainImage').src = product.img1;
+            document.getElementById('modalBadge').textContent = product.tagLabel || product.brand;
+            document.getElementById('modalBrand').textContent = product.brand;
+            document.getElementById('modalGroundType').textContent = product.pitch;
+            document.getElementById('modalTitle').textContent = product.name;
+            
+            document.getElementById('modalCurrentPrice').textContent = product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            document.getElementById('modalOldPrice').textContent = product.oldPrice ? product.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : '';
+            
+            const installmentValue = (product.price / 10).toFixed(2).replace('.', ',');
+            document.getElementById('modalInstallments').textContent = `ou 10x de R$ ${installmentValue} sem juros no cartão`;
+
+            document.getElementById('modalDescription').textContent = product.desc;
+            document.getElementById('modalCondition').textContent = product.condition;
+
+            // Render Thumbnails
+            const thumbsContainer = document.getElementById('modalThumbnails');
+            thumbsContainer.innerHTML = `
+                <img src="${product.img1}" onclick="document.getElementById('modalMainImage').src='${product.img1}'" class="w-14 h-14 object-contain bg-slate-50 p-1 rounded-xl border-2 border-brand-lime cursor-pointer">
+                <img src="${product.img2}" onclick="document.getElementById('modalMainImage').src='${product.img2}'" class="w-14 h-14 object-contain bg-slate-50 p-1 rounded-xl border border-slate-200 cursor-pointer">
+            `;
+
+            // Render Size Selection Grid
+            const sizesGrid = document.getElementById('modalSizesGrid');
+            sizesGrid.innerHTML = product.sizes.map(s => `
+                <button type="button" onclick="selectSize(formatSizePair('${s}'), this)" class="modal-size-btn py-3 px-2 rounded-xl border border-slate-300 font-heading font-extrabold text-xs text-slate-800 hover:border-slate-900 transition">
+                    ${formatSizePair(s)}
+                </button>
+            `).join('');
+
+            document.getElementById('sizeWarningMsg').classList.add('hidden');
+            document.getElementById('productModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function selectSize(size, btnElement) {
+            activeSelectedSize = size;
+            document.querySelectorAll('.modal-size-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-dark', 'text-white', 'border-brand-dark');
+                btn.classList.add('border-slate-300', 'text-slate-800');
+            });
+            btnElement.classList.remove('border-slate-300', 'text-slate-800');
+            btnElement.classList.add('bg-brand-dark', 'text-white', 'border-brand-dark');
+            document.getElementById('sizeWarningMsg').classList.add('hidden');
+        }
+
+        function triggerModalWhatsAppBuy() {
+            if (!activeSelectedSize) {
+                document.getElementById('sizeWarningMsg').classList.remove('hidden');
+                return;
+            }
+
+            const product = PRODUCTS_DATA.find(p => p.id === currentModalProductId);
+            if (!product) return;
+
+            const formattedPrice = product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            const msg = `Olá! Tenho interesse na ${product.name}, tamanho ${activeSelectedSize}, anunciada por ${formattedPrice}. Poderia confirmar a disponibilidade? Produto: ${product.name}`;
+            
+            window.open(formatWhatsAppUrl(msg), '_blank');
+        }
+
+        function closeProductModal() {
+            document.getElementById('productModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // MOBILE MENU TOGGLE
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // FAQ ACCORDION TOGGLE
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            content.classList.toggle('hidden');
+            if (content.classList.contains('hidden')) {
+                icon.className = 'fa-solid fa-plus text-slate-400 transition-transform duration-200';
+            } else {
+                icon.className = 'fa-solid fa-minus text-brand-limeDark transition-transform duration-200';
+            }
+        }
+    </script>
+<script id="boldstorm-i18n">
+(() => {
+const PT_EN={"Bold Storm • Chuteiras de alta performance": "Bold Storm • High-performance football boots", "Catálogo por campo, modelo e numeração": "Browse by pitch, model and size", "Início": "Home", "Categorias": "Categories", "Lançamentos": "New arrivals", "Promoções": "Offers", "Marcas": "Brands", "Tipo de Campo": "Pitch type", "Campo Trava FG (Campo)": "Firm ground FG", "Campo Trava SG (Molhado)": "Soft ground SG (wet)", "Sintético AG": "Artificial grass AG", "Society (TF)": "Turf / Society (TF)", "Futsal (IN)": "Futsal / Indoor (IN)", "Acessórios": "Accessories", "Seminovas": "Pre-owned", "Sobre Nós": "About us", "Falar no WhatsApp": "Chat on WhatsApp", "Falar com Atendente no WhatsApp": "Chat with our team on WhatsApp", "Marcas Principais": "Top brands", "Atendimento online • Português e English": "Online support • Português and English", "Português + English • PT / EN": "Português + English • PT / EN", "Compre por categoria": "Shop by category", "Ver catálogo": "View catalogue", "Campo": "Firm ground", "Travas FG": "FG studs", "Sintético": "Artificial grass", "Solado AG": "AG soleplate", "Society": "Turf", "Solado TF": "TF soleplate", "Futsal": "Futsal", "Solado IN": "IN sole", "Seleção especial": "Special selection", "Complete seu kit": "Complete your kit", "Envios com rastreamento": "Tracked shipping", "BOLD STORM": "BOLD STORM", "UM TEMPORAL DE NOVIDADES ⚡️": "A STORM OF NEW ARRIVALS ⚡️", "Descubra uma seleção exclusiva das melhores chuteiras, compare os modelos e escolha o tamanho ideal. A nossa equipa está disponível para confirmar a disponibilidade e prestar-lhe um atendimento personalizado.": "Discover an exclusive selection of the best football boots, compare the models and choose the ideal size. Our team is available to confirm availability and provide personalised assistance.", "Explorar catálogo": "Explore catalogue", "Escolher modelo": "Choose model", "Filtros úteis": "Useful filters", "Escolha por uso e tamanho": "Choose by use and size", "Atendimento direto": "Direct support", "Conversa com a Bold Storm": "Chat with Bold Storm", "Estoque confirmado": "Stock confirmation", "Consulte antes de finalizar": "Check before ordering", "Destaque do catálogo": "Catalogue highlight", "Seleção Bold Storm": "Bold Storm selection", "Catálogo organizado": "Organised catalogue", "Filtros por categoria": "Category filters", "Envios com rastreamento": "Tracked shipping", "Rastreamento conforme destino": "Tracking according to destination", "Atendimento internacional": "International support", "Direto via WhatsApp": "Direct via WhatsApp", "Compra assistida": "Assisted purchase", "Conversa pelo WhatsApp": "WhatsApp assistance", "Suporte Total": "Full support", "Antes e depois do pedido": "Before and after your order", "Consulte Numerações": "Check available sizes", "Tabela de tamanhos": "Size guide", "Linhas de Alta Performance": "High-performance lines", "ESCOLHA POR MODELO": "CHOOSE BY MODEL", "Clique na sua linha favorita para filtrar instantaneamente os modelos em estoque.": "Select your favourite line to instantly filter available models.", "Explosão de velocidade e arranque rápido para atacantes de ponta.": "Explosive speed and acceleration for attacking players.", "Precisão cirúrgica de passe e controle milimétrico de bola.": "Pinpoint passing accuracy and close ball control.", "Toque clássico e conforto lendário em couro premium sintético.": "Classic touch and outstanding comfort in premium synthetic leather.", "Leveza extrema criada para máxima aceleração em campo.": "Ultra-light construction for maximum acceleration.", "Tecnologia de efeito e grip para chute com curvatura perfeita.": "Grip technology designed for controlled spin and curling shots.", "Sensibilidade pura e ajuste anatômico sem costuras.": "Pure touch with a seamless anatomical fit.", "Agilidade finta e amarração personalizada FUZIONFIT.": "Agility and a personalised FUZIONFIT lockdown.", "Inacreditavelmente leve para arranques de alta performance.": "Exceptionally light for high-performance acceleration.", "Ver modelos": "View models", "Busca Rápida por Numeração": "Quick size search", "ESCOLHA PELO SEU TAMANHO": "CHOOSE YOUR SIZE", "Selecione o seu número de chuteira para exibir apenas as numerações com estoque pronto.": "Select your boot size to display matching available stock.", "Todos": "All", "Todos os produtos": "All products", "CATÁLOGO DE CHUTEIRAS": "FOOTBALL BOOTS CATALOGUE", "Exibindo modelos em estoque": "Showing models currently listed", "Valores disponíveis sob consulta. Fale no WhatsApp para confirmar o valor.": "Prices are available on request. Contact us on WhatsApp to confirm the price.", "Mais Vendidas": "Best sellers", "Ordenar por: Relevância": "Sort by: Relevance", "Mais Recentes": "Newest", "Menor Preço": "Lowest price", "Maior Preço": "Highest price", "Nome (A-Z)": "Name (A–Z)", "Limpar": "Clear", "Nenhum produto encontrado": "No products found", "Tente ajustar a sua busca ou remover os filtros aplicados.": "Try changing your search or clearing the active filters.", "Ver todos os produtos": "View all products", "As Melhores Marcas do Mundo": "Leading global brands", "MARCAS DISPONÍVEIS": "AVAILABLE BRANDS", "Ver Chuteiras": "View boots", "Garimpo Selecionado": "Curated selection", "CHUTEIRAS SEMINOVAS EXCLUSIVAS": "EXCLUSIVE PRE-OWNED BOOTS", "A oportunidade de adquirir modelos topo de linha de coleções raras com inspeção rigorosa de conservação e notas reais.": "A chance to buy top-tier and rare models that are carefully inspected and clearly graded.", "Ver Todas Seminovas": "View all pre-owned boots", "CONSERVAÇÃO AVALIADA COM PRECISÃO": "CONDITION CAREFULLY ASSESSED", "Cada chuteira seminova passa por higienização profissional e avaliação de detalhes: nota de estática (9/10, 9.5/10), estrutura de travas, solado e integridade do cabedal.": "Every pre-owned pair is professionally cleaned and assessed for appearance, studs, soleplate and upper integrity.", "Fotos 100% Reais no WhatsApp": "100% real photos on WhatsApp", "Caixa Original (conforme descrição)": "Original box when stated", "Higienização UV Antibacteriana": "Antibacterial UV cleaning", "Nota 9.5/10": "Condition 9.5/10", "Nota 9.0/10": "Condition 9.0/10", "Nike • Trava FG": "Nike • FG studs", "Adidas • Trava FG": "Adidas • FG studs", "Acompanha bolsa porta-chuteiras e caixa original. Pouquíssimo uso em gramado natural.": "Includes boot bag and original box. Very lightly used on natural grass.", "Cabedal em estado impecável, travas com leve desgaste superficial de jogo.": "Upper in excellent condition, with light cosmetic wear on the studs.", "Tamanho disponível:": "Available size:", "Seminova Premium": "Premium pre-owned", "Seminova Rara": "Rare pre-owned", "Consultar": "Enquire", "Equipamentos Complementares": "Essential accessories", "ACESSÓRIOS DE PERFORMANCE": "PERFORMANCE ACCESSORIES", "Complete seu kit com meias antiderrapantes, caneleiras de fibra de carbono e bolsas exclusivas.": "Complete your kit with grip socks, carbon-fibre shin guards and premium boot bags.", "Meia Antiderrapante Pro Grip": "Pro Grip Socks", "Evita bolhas e elimina o deslizamento interno do pé.": "Helps prevent blisters and internal foot movement.", "Caneleira Mini Fibra de Carbono": "Mini Carbon-Fibre Shin Guards", "Ultra leve e rígida, preferida dos jogadores profissionais.": "Ultra-light and rigid, a popular choice among competitive players.", "Bolsa Porta-Chuteira Premium": "Premium Boot Bag", "Com compartimento respirável e tecido impermeável.": "Breathable compartment with water-resistant fabric.", "Kit Limpeza & Conservação": "Cleaning and Care Kit", "Escova macia e espuma protetora para cabedais de couro e sintético.": "Soft brush and protective foam for leather and synthetic uppers.", "Nossa História": "Our story", "A IDENTIDADE DA": "THE IDENTITY OF", "A Bold Storm reúne diferentes linhas de chuteiras em um catálogo organizado, facilitando a busca pelo modelo, solado e tamanho adequados para cada tipo de jogo.": "Bold Storm brings together different football-boot lines in an organised catalogue, making it easier to find the right model, soleplate and size.", "Do primeiro filtro à confirmação do pedido, o atendimento continua no WhatsApp. Você pode tirar dúvidas, pedir detalhes e confirmar disponibilidade e formas de envio antes de fechar a compra.": "From the first filter to order confirmation, support continues on WhatsApp. Ask questions, request details and confirm availability and shipping before ordering.", "Categorias e filtros para uma escolha mais simples.": "Categories and filters for a simpler choice.", "Converse com a equipe antes de finalizar.": "Chat with our team before ordering.", "DO CATÁLOGO AO WHATSAPP, SEM COMPLICAÇÃO": "FROM THE CATALOGUE TO WHATSAPP, SIMPLY", "O site ajuda você a filtrar as opções. A confirmação do modelo, numeração, disponibilidade e envio acontece diretamente com a equipe da Bold Storm.": "The site helps you filter your options. Model, size, availability and shipping are confirmed directly with the Bold Storm team.", "Falar com a Bold Storm": "Chat with Bold Storm", "Escolha a categoria": "Choose a category", "Comece por campo, sintético, society, futsal, seminovas ou acessórios.": "Start with firm ground, artificial grass, turf, futsal, pre-owned boots or accessories.", "Use os filtros": "Use the filters", "Refine por marca, linha e tipo de gramado.": "Refine by brand, line and pitch type.", "Abra os detalhes": "Open the details", "Veja descrição, tamanhos exibidos e informações do modelo escolhido.": "Review the description, listed sizes and product information.", "Confirme no WhatsApp": "Confirm on WhatsApp", "A mensagem já leva o nome do produto e o tamanho selecionado para agilizar o atendimento.": "The message already includes the product name and selected size for faster service.", "Cliente em destaque": "Featured customer", "OS MELHORES": "THE BEST", "USAM BOLD STORM": "WEAR BOLD STORM", "Dentro de campo, desempenho e estilo falam por si. Mais um cliente Bold Storm representando com chuteira de alto nível.": "On the pitch, performance and style speak for themselves. Another Bold Storm customer showing up in top-level boots.", "Cliente real": "Real customer", "Foto em campo": "On-pitch photo", "Bold Storm em destaque": "Bold Storm featured", "Cliente Bold Storm usando chuteira em campo": "Bold Storm customer wearing football boots on the pitch", "Cliente em campo representando a Bold Storm": "Customer on the pitch representing Bold Storm", "Tire Suas Dúvidas": "Questions answered", "PERGUNTAS FREQUENTES": "FREQUENTLY ASKED QUESTIONS", "As chuteiras são 100% originais?": "Are the football boots 100% authentic?", "Sim, trabalhamos com produtos selecionados das marcas disponíveis no catálogo: Nike, Adidas, Puma e Mizuno. Consulte os detalhes e a disponibilidade com nossa equipe.": "We work with selected products from the brands currently available in the catalogue: Nike, Adidas, Puma and Mizuno. Contact our team for details and availability.", "Como consultar os tamanhos disponíveis?": "How can I check available sizes?", "Clique em \"Escolher modelo\" na chuteira desejada, selecione a numeração e confirme a disponibilidade diretamente com nossa equipe pelo WhatsApp.": "Select \"Choose model\" on the product, choose your size and confirm availability directly with our team on WhatsApp.", "Como faço para realizar a compra?": "How do I place an order?", "Nosso site funciona como um catálogo interativo. Ao escolher a chuteira e o seu tamanho, clique no botão do WhatsApp. Você será redirecionado com uma mensagem automática e nossa equipe finalizará os detalhes de pagamento e envio com você.": "The site works as an interactive catalogue. Choose the boots and size, then select the WhatsApp button. Our team will confirm payment and shipping details with you.", "Como funciona o envio?": "How does shipping work?", "As opções de transporte, prazo, custo e rastreamento são confirmadas pelo WhatsApp conforme o endereço de entrega.": "Shipping method, delivery time, cost and tracking are confirmed on WhatsApp according to the delivery address.", "Posso solicitar troca caso a numeração não sirva?": "Can I request an exchange if the size does not fit?", "Sim. Garantimos o direito de troca de numeração em até 7 dias após o recebimento, desde que o produto esteja sem marcas de uso em campo e com as etiquetas originais intactas.": "Exchange conditions depend on the destination and product condition. Confirm the applicable terms with our team before ordering, especially for international deliveries.", "Quais são as formas de pagamento aceitas?": "Which payment methods are available?", "A equipe informa pelo WhatsApp as formas de pagamento disponíveis antes da confirmação do pedido.": "Our team will confirm the available payment methods on WhatsApp before the order is placed.", "É possível pedir mais fotos pelo WhatsApp?": "Can I request more photos on WhatsApp?", "Sim! Nosso atendimento no WhatsApp é focado em transparência total. Você pode pedir fotos em tempo real, vídeos das travas, palmar e detalhes do modelo de seu interesse.": "Yes. You can request current photos, videos of the studs, insole and other details of the model you are interested in.", "Catálogo de chuteiras, seminovas e acessórios com atendimento direto pelo WhatsApp.": "Football boots, pre-owned pairs and accessories with direct WhatsApp support.", "Navegação": "Navigation", "Chuteiras Seminovas": "Pre-owned boots", "Principais Marcas": "Top brands", "Atendimento": "Support", "Atendimento online pelo WhatsApp": "Online support via WhatsApp", "WhatsApp Oficial": "Official WhatsApp", "© 2026 BOLD STORM. Todos os direitos reservados. Atendimento direto pelo WhatsApp.": "© 2026 BOLD STORM. All rights reserved. Direct support via WhatsApp.", "Valor exibido em BRL": "Price shown in BRL", "Selecione o Tamanho (EU / BR)": "Select a size (EU / BR)", "Selecione o Tamanho": "Select a size", "Ajuste Fiel": "True to size", "Por favor, selecione um tamanho antes de prosseguir para o WhatsApp.": "Please select a size before continuing to WhatsApp.", "Condição:": "Condition:", "Informações do produto:": "Product information:", "Confirme no atendimento": "Confirm with our team", "Disponibilidade:": "Availability:", "Sujeita à confirmação": "Subject to confirmation", "Novo na Caixa": "Brand new in box", "Lançamento": "New arrival", "Mais Vendida": "Best seller", "Oferta Exclusiva": "Exclusive offer", "Lançamento 2026": "2026 release", "Edição Limitada": "Limited edition", "Clássico Premium": "Premium classic", "Society Premium": "Premium turf", "Futsal Pro": "Futsal Pro", "Campo Molhado": "Wet ground", "Clássico": "Classic", "Performance": "Performance", "Campo FG": "Firm ground FG", "Campo SG": "Soft ground SG", "Gramado Artificial AG": "Artificial grass AG", "Chuteira de alta performance com unidade Zoom Air exclusiva de três quartos. Desenvolvida para máxima aceleração e mudança rápida de direção em campos de grama natural.": "High-performance boots featuring a three-quarter Zoom Air unit, designed for maximum acceleration and rapid changes of direction on natural grass.", "Com lingueta dobrável clássica e aletas de borracha Strikeskin estrategicamente posicionadas para máximo efeito no chute.": "Features a classic fold-over tongue and strategically placed Strikeskin rubber fins for enhanced spin and striking control.", "Tecnologia Nike Gripknit inovadora cobrindo a área de contato da bola para controle absurdo em condições secas ou molhadas.": "Innovative Nike Gripknit technology covers the ball-contact area for outstanding control in dry or wet conditions.", "Cabedal FUZIONFIT360 reengenhado com malha dupla e suporte PWRTAPE para travar o pé sem necessidade de cadarço apertado.": "Re-engineered FUZIONFIT360 upper with dual mesh and PWRTAPE support for a secure fit without overtightening the laces.", "O retorno da lendária linha F50 com solado Sprintframe 360 ultraleve para velocidade inigualável nos primeiros metros.": "The return of the legendary F50 line with an ultra-light Sprintframe 360 soleplate for exceptional early acceleration.", "Material FlyTouch Plus projetado em couro sintético macio que se molda perfeitamente ao formato anatômico do seu pé.": "Soft FlyTouch Plus synthetic leather engineered to adapt comfortably to the anatomical shape of your foot.", "Construção artesanal japonesa em couro de canguru selecionado. A chuteira mais refinada e confortável do mercado mundial.": "Japanese handcrafted construction in selected kangaroo leather, designed for refined touch and exceptional comfort.", "Amortecimento em espuma EVA e cravos multidirecionais para aderência impecável no campo society de grama sintética.": "EVA foam cushioning and multidirectional studs provide reliable grip on artificial turf pitches.", "Solado de borracha antimarcante desenvolvido especificamente para quadras cobertas de futsal com tração rápida.": "Non-marking rubber outsole developed specifically for indoor futsal courts and quick traction.", "Chuteira com travas de alumínio rosqueáveis para campos pesados, enlameados ou molhados. Acompanha chave de remoção.": "Screw-in aluminium studs for heavy, muddy or wet natural pitches. Stud key included.", "Design tradicional em couro genuíno. Maciez inigualável e durabilidade comprovada para atletas exigentes.": "Traditional genuine-leather design with outstanding softness and proven durability.", "Cabedal Hypoknit projetado para fornecer áreas estratégicas de elasticidade e suporte na movimentação lateral.": "Hypoknit upper engineered with strategic stretch and support zones for lateral movement."};
+Object.assign(PT_EN,{
+  "Os favoritos dos clientes":"Customer favourites",
+  "AS MAIS VENDIDAS":"BEST SELLERS",
+  "Dois modelos em destaque entre os pedidos da Bold Storm.":"Two standout models among Bold Storm orders.",
+  "Destaques da semana":"Weekly highlights",
+  "TOP 1 EM VENDAS":"TOP 1 SELLER",
+  "TOP 2 EM VENDAS":"TOP 2 SELLER",
+  "Mercurial Rosa / Branco / Preto":"Mercurial Pink / White / Black",
+  "Adidas Branco / Rosa / Azul":"Adidas White / Pink / Blue",
+  "Visual marcante, perfil de velocidade e destaque absoluto no catálogo.":"A striking look, speed-focused profile and a standout in the catalogue.",
+  "Combinação premium e uma das escolhas que mais chamam atenção dentro de campo.":"A premium colour combination and one of the most eye-catching choices on the pitch.",
+  "Consultar no WhatsApp":"Ask on WhatsApp",
+
+"Escolher modelo":"Choose model",
+"Valores disponíveis sob consulta. Fale com a Bold Storm pelo WhatsApp.":"Prices are available on request. Contact Bold Storm on WhatsApp.",
+"Valor a consultar":"Price on request",
+"":"Ask on WhatsApp",
+"Valor disponível sob consulta":"Price available on request",
+"Fale no WhatsApp para receber o valor e confirmar o envio.":"Message us on WhatsApp to receive the price and confirm shipping.",
+"Consultar":"Enquire"
+});
+const originals=new WeakMap(), rendered=new WeakMap(), attrOriginals=new WeakMap();
+let lang=localStorage.getItem('boldstorm-language')||(((navigator.language||'').toLowerCase().startsWith('en'))?'en':'pt');
+Object.assign(PT_EN,{
+  "Compre por marca":"Shop by brand",
+  "Confira os lançamentos mais recentes e os modelos mais vendidos da Bold Storm.":"Choose a brand to filter the models available in the catalogue.",
+  "Mercurial, Phantom e Tiempo":"Mercurial, Phantom and Tiempo",
+  "F50, Predator e X":"F50, Predator and X",
+  "Ultra e linhas de velocidade":"Ultra and speed lines"
+});
+window.getBoldStormLanguage=()=>lang;
+function tr(v){const x=String(v??'').trim();if(!x)return x;if(PT_EN[x])return PT_EN[x];let m=x.match(/^Exibindo\s+(\d+)\s+modelos disponíveis$/);if(m)return `Showing ${m[1]} available models`;m=x.match(/^Marca:\s*(.+)$/);if(m)return `Brand: ${m[1]}`;m=x.match(/^Modelo:\s*(.+)$/);if(m)return `Model: ${m[1]}`;m=x.match(/^Campo:\s*(.+)$/);if(m)return `Pitch: ${tr(m[1])}`;m=x.match(/^Tamanho:\s*(.+)$/);if(m)return `Size: ${m[1]}`;m=x.match(/^Busca:\s*(.+)$/);if(m)return `Search: ${m[1]}`;return x}
+function withSpace(raw,t){return (raw.match(/^\s*/)?.[0]||'')+t+(raw.match(/\s*$/)?.[0]||'')}
+function textNode(n){if(!n.parentElement||['SCRIPT','STYLE','NOSCRIPT'].includes(n.parentElement.tagName))return;const raw=n.nodeValue;if(!raw||!raw.trim())return;const prev=rendered.get(n);if(!originals.has(n)||(prev!==undefined&&raw!==prev))originals.set(n,raw);const orig=originals.get(n);const want=lang==='en'?withSpace(orig,tr(orig)):orig;if(n.nodeValue!==want)n.nodeValue=want;rendered.set(n,want)}
+function attrs(el){if(!(el instanceof Element))return;let o=attrOriginals.get(el);if(!o){o={};attrOriginals.set(el,o)};['placeholder','title','aria-label'].forEach(a=>{if(!el.hasAttribute(a))return;if(!(a in o))o[a]=el.getAttribute(a);const v=lang==='en'?tr(o[a]):o[a];if(el.getAttribute(a)!==v)el.setAttribute(a,v)})}
+function apply(root=document.body){if(!root)return;const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode())textNode(n);if(root instanceof Element)attrs(root);root.querySelectorAll?.('[placeholder],[title],[aria-label]').forEach(attrs);document.documentElement.lang=lang==='en'?'en':'pt-BR';document.title=lang==='en'?'Bold Storm | Football Boots':'Bold Storm | Chuteiras de Futebol';const b=document.getElementById('languageToggle'),l=document.getElementById('languageToggleLabel');if(b&&l){l.textContent=lang==='en'?'PT':'EN';b.setAttribute('aria-label',lang==='en'?'Mudar para português':'Mudar para inglês');b.setAttribute('aria-pressed',lang==='en'?'true':'false')}}
+window.toggleLanguage=function(){lang=lang==='pt'?'en':'pt';localStorage.setItem('boldstorm-language',lang);if(typeof currentProducts!=='undefined')renderProductsGrid(currentProducts);apply(document.body)};
+function formatSizePair(size){const eu=parseInt(size,10);if(Number.isNaN(eu))return String(size);return `EU ${eu} / BR ${eu-2}`}
+function sizeMatchesQuery(size,query){const eu=parseInt(size,10);if(Number.isNaN(eu))return String(size).toLowerCase().includes(query);const br=eu-2;return String(eu)===query||String(br)===query||`eu ${eu}`.includes(query)||`br ${br}`.includes(query)||formatSizePair(size).toLowerCase().includes(query)}
+function consultationLabel(){return lang==='en'?'Price on request':'Valor a consultar'}
+window.renderProductsGrid=function renderProductsGrid(products){const g=document.getElementById('productGrid'),nr=document.getElementById('noResults'),cl=document.getElementById('productsCountLabel');cl.textContent=lang==='en'?`Showing ${products.length} available models`:`Exibindo ${products.length} modelos disponíveis`;if(!products||!products.length){g.innerHTML='';nr.classList.remove('hidden');apply(nr);return}nr.classList.add('hidden');g.innerHTML=products.map(p=>{const tag=lang==='en'?tr(p.tagLabel||p.brand):(p.tagLabel||p.brand),pitch=lang==='en'?tr(p.pitch):p.pitch,cond=lang==='en'?tr(p.condition):p.condition,note=lang==='en'?'Message us on WhatsApp for the price':'Fale no WhatsApp para receber o valor',details=lang==='en'?'View details':'Ver Detalhes',buy=lang==='en'?'Choose model':'Escolher modelo';return `<div class="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"><div class="relative aspect-[4/5] bg-brand-dark overflow-hidden cursor-pointer" onclick="openProductModal('${p.id}')"><img src="${p.img1}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.04] transition duration-500" alt="${p.name}"><div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"></div><span class="absolute top-3 left-3 bg-brand-lime text-black font-extrabold text-[10px] uppercase px-2.5 py-1 rounded-md z-20">${tag}</span><span class="absolute bottom-3 right-3 text-[10px] font-bold text-white bg-black/75 px-2 py-0.5 rounded backdrop-blur z-20">${pitch}</span></div><div class="p-6 flex-1 flex flex-col"><div class="flex-1"><div class="flex items-center justify-between gap-2 text-[11px] font-bold text-slate-400 mb-1"><span>${p.brand}</span><span class="text-brand-limeDark text-right">${cond}</span></div><h3 onclick="openProductModal('${p.id}')" class="font-heading font-extrabold text-base sm:text-lg text-slate-900 group-hover:text-brand-limeDark transition cursor-pointer line-clamp-2 min-h-[3.2rem]">${p.name}</h3><div class="mt-3 text-[10px] font-extrabold uppercase tracking-wide text-slate-400">${lang==='en'?'EU / BR sizes':'Tamanhos EU / BR'}</div><div class="mt-1.5 flex flex-wrap gap-1 min-h-[2rem]">${p.sizes.slice(0,4).map(s=>`<span class="text-[10px] sm:text-xs font-extrabold bg-slate-100 text-slate-700 px-2 py-1 rounded">${formatSizePair(s)}</span>`).join('')}${p.sizes.length>4?`<span class="text-[10px] font-bold text-slate-400 self-center">+${p.sizes.length-4}</span>`:''}</div></div><div class="mt-5 pt-4 border-t border-slate-100"><div class="mb-3"><div class="font-heading font-black text-xl sm:text-2xl text-slate-900">${consultationLabel()}</div><span class="text-[10px] text-slate-500 font-semibold block mt-1 min-h-[1rem]">${note}</span></div><div class="grid grid-cols-2 gap-3"><button onclick="openProductModal('${p.id}')" class="py-3.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs rounded-xl transition">${details}</button><button onclick="openProductModal('${p.id}')" class="py-3.5 px-3 bg-brand-lime hover:bg-yellow-300 text-black font-extrabold text-xs rounded-xl transition flex items-center justify-center gap-1 shadow-md"><i class="fa-brands fa-whatsapp text-sm"></i> ${buy}</button></div></div></div></div>`}).join('')};
+window.openProductModal=function openProductModal(id){const p=PRODUCTS_DATA.find(x=>x.id===id);if(!p)return;currentModalProductId=id;activeSelectedSize=null;document.getElementById('modalMainImage').src=p.img1;document.getElementById('modalBadge').textContent=lang==='en'?tr(p.tagLabel||p.brand):(p.tagLabel||p.brand);document.getElementById('modalBrand').textContent=p.brand;document.getElementById('modalGroundType').textContent=lang==='en'?tr(p.pitch):p.pitch;document.getElementById('modalTitle').textContent=p.name;document.getElementById('modalCurrentPrice').textContent=consultationLabel();document.getElementById('modalOldPrice').textContent='';document.getElementById('modalInstallments').textContent=lang==='en'?'Message us on WhatsApp to receive the price and confirm shipping.':'Fale no WhatsApp para receber o valor e confirmar o envio.';document.getElementById('modalDescription').textContent=lang==='en'?tr(p.desc):p.desc;document.getElementById('modalCondition').textContent=lang==='en'?tr(p.condition):p.condition;document.getElementById('modalThumbnails').innerHTML=`<img src="${p.img1}" onclick="document.getElementById('modalMainImage').src='${p.img1}'" class="w-14 h-14 object-contain bg-slate-50 p-1 rounded-xl border-2 border-brand-lime cursor-pointer"><img src="${p.img2}" onclick="document.getElementById('modalMainImage').src='${p.img2}'" class="w-14 h-14 object-contain bg-slate-50 p-1 rounded-xl border border-slate-200 cursor-pointer">`;document.getElementById('modalSizesGrid').innerHTML=p.sizes.map(s=>`<button type="button" onclick="selectSize(formatSizePair('${s}'),this)" class="modal-size-btn py-3 px-2 rounded-xl border border-slate-300 font-heading font-extrabold text-xs text-slate-800 hover:border-brand-lime transition">${formatSizePair(s)}</button>`).join('');document.getElementById('sizeWarningMsg').classList.add('hidden');document.getElementById('productModal').classList.remove('hidden');document.body.style.overflow='hidden';apply(document.getElementById('productModal'))};
+window.openGeneralWhatsApp=function(){const m=lang==='en'?'Hello! I came from the Bold Storm website and would like help choosing football boots. Please confirm shipping options for the selected destination and send me the price.':'Olá! Vim pelo site da Bold Storm e gostaria de ajuda para escolher uma chuteira. Pode confirmar as opções de envio para o endereço informado e me informar o valor?';window.open(formatWhatsAppUrl(m),'_blank')};
+Object.assign(PT_EN,{"Sobre a Bold Storm": "About Bold Storm", "Na Bold Storm, acreditamos que comprar artigos desportivos deve ser uma experiência simples, segura e transparente.": "At Bold Storm, we believe that buying sports products should be a simple, safe and transparent experience.", "Somos uma loja online dedicada a disponibilizar produtos cuidadosamente selecionados, combinando qualidade, inovação e um excelente custo-benefício. Trabalhamos diariamente para oferecer um catálogo atualizado, com os lançamentos mais procurados e um serviço que coloca o cliente no centro de cada decisão.": "We are an online store dedicated to offering carefully selected products that combine quality, innovation and excellent value for money. We work every day to keep our catalogue up to date with the most sought-after releases and a service that puts the customer at the centre of every decision.", "A confiança é a base da nossa marca. Por isso, privilegiamos uma comunicação transparente, um atendimento personalizado e um processo de compra fiável, desde a encomenda até à entrega.": "Trust is the foundation of our brand. That is why we prioritise transparent communication, personalised service and a reliable purchasing process, from placing the order through to delivery.", "O nosso slogan, “Um Temporal de Novidades”, traduz o compromisso de apresentar continuamente novas coleções, tendências e oportunidades, proporcionando uma experiência de compra moderna e diferenciada.": "Our slogan, “A Storm of New Arrivals”, reflects our commitment to continually presenting new collections, trends and opportunities, creating a modern and distinctive shopping experience.", "Independentemente de onde esteja, a nossa missão é levar até si produtos de qualidade, com um serviço eficiente e uma experiência que inspire confiança em cada compra.": "Wherever you are, our mission is to bring you quality products, efficient service and an experience that inspires confidence with every purchase.", "Bold Storm — Um Temporal de Novidades.": "Bold Storm — A Storm of New Arrivals."});
+window.openWhatsAppForProduct=function(name,size){const m=lang==='en'?`Hello! I would like more information about ${name}${size?`, size ${size}`:''}. Please confirm availability, shipping to the selected address and the price.`:`Olá! Gostaria de saber mais sobre ${name}${size?`, tamanho ${size}`:''}. Pode confirmar disponibilidade, envio para o endereço informado e o valor?`;window.open(formatWhatsAppUrl(m),'_blank')};
+window.triggerModalWhatsAppBuy=function(){if(!activeSelectedSize){document.getElementById('sizeWarningMsg').classList.remove('hidden');return}const p=PRODUCTS_DATA.find(x=>x.id===currentModalProductId);if(!p)return;const m=lang==='en'?`Hello! I am interested in ${p.name}, size ${activeSelectedSize}. Please confirm availability, shipping to the selected address and the final price.`:`Olá! Tenho interesse na ${p.name}, tamanho ${activeSelectedSize}. Pode confirmar disponibilidade, envio para o endereço informado e o valor final?`;window.open(formatWhatsAppUrl(m),'_blank')};
+const mo=new MutationObserver(ms=>ms.forEach(mu=>{if(mu.type==='characterData')textNode(mu.target);mu.addedNodes.forEach(n=>{if(n.nodeType===3)textNode(n);else if(n.nodeType===1)apply(n)})}));
+window.addEventListener('DOMContentLoaded',()=>{apply(document.body);mo.observe(document.body,{childList:true,subtree:true,characterData:true})})
+})();
+</script>
+<script id="boldstorm-final-product-adjustments">
+(() => {
+  const AVAILABLE_SIZES = ['40','41','42','43','44','45'];
+
+  function currentLanguage() {
+    return typeof window.getBoldStormLanguage === 'function' ? window.getBoldStormLanguage() : 'pt';
+  }
+
+  function translated(value) {
+    const lang = currentLanguage();
+    return lang === 'en' && typeof tr === 'function' ? tr(value) : value;
+  }
+
+  function sizeButtons(label, sizes) {
+    return `
+      <div class="col-span-2 sm:col-span-3 mt-1 first:mt-0">
+        <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 mb-2">${label}</div>
+        <div class="grid grid-cols-4 gap-2">
+          ${sizes.map(size => `
+            <button type="button"
+              onclick="selectSize('${label} ${size}', this)"
+              class="modal-size-btn py-3 px-2 rounded-xl border border-slate-300 font-heading font-extrabold text-xs text-slate-800 hover:border-brand-lime transition">
+              ${size}
+            </button>`).join('')}
+        </div>
+      </div>`;
+  }
+
+  window.renderProductsGrid = function renderProductsGrid(products) {
+    const grid = document.getElementById('productGrid');
+    const noResults = document.getElementById('noResults');
+    const countLabel = document.getElementById('productsCountLabel');
+    const lang = currentLanguage();
+
+    countLabel.textContent = lang === 'en'
+      ? `Showing ${products.length} available models`
+      : `Exibindo ${products.length} modelos disponíveis`;
+
+    if (!products || !products.length) {
+      grid.innerHTML = '';
+      noResults.classList.remove('hidden');
+      if (typeof apply === 'function') apply(noResults);
+      return;
+    }
+
+    noResults.classList.add('hidden');
+    grid.innerHTML = products.map(product => {
+      const tag = translated(product.tagLabel || product.brand);
+      const pitch = translated(product.pitch);
+      const condition = translated(product.condition);
+      const details = lang === 'en' ? 'View details' : 'Ver detalhes';
+      const choose = lang === 'en' ? 'Choose model' : 'Escolher modelo';
+      const sizeLabel = lang === 'en' ? 'Available sizes: 40–45' : 'Numerações disponíveis: 40–45';
+
+      return `
+        <div class="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+          <div class="relative aspect-[4/5] bg-brand-dark overflow-hidden cursor-pointer" onclick="openProductModal('${product.id}')">
+            <img src="${product.img1}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.04] transition duration-500" alt="${product.name}">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-brand-lime text-black font-extrabold text-[10px] uppercase px-2.5 py-1 rounded-md z-20">${tag}</span>
+            <span class="absolute bottom-3 right-3 text-[10px] font-bold text-white bg-black/75 px-2 py-0.5 rounded backdrop-blur z-20">${pitch}</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-2 text-[11px] font-bold text-slate-400 mb-1">
+                <span>${product.brand}</span>
+                <span class="text-brand-limeDark text-right">${condition}</span>
+              </div>
+              <h3 onclick="openProductModal('${product.id}')" class="font-heading font-extrabold text-base sm:text-lg text-slate-900 group-hover:text-brand-limeDark transition cursor-pointer line-clamp-2 min-h-[3.2rem]">${product.name}</h3>
+              <div class="mt-3 inline-flex items-center rounded-lg bg-slate-100 px-3 py-2 text-xs font-extrabold text-slate-700">${sizeLabel}</div>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 grid grid-cols-2 gap-3">
+              <button onclick="openProductModal('${product.id}')" class="py-3.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs rounded-xl transition">${details}</button>
+              <button onclick="openProductModal('${product.id}')" class="py-3.5 px-3 bg-brand-lime hover:bg-yellow-300 text-black font-extrabold text-xs rounded-xl transition flex items-center justify-center gap-1 shadow-md">
+                <i class="fa-solid fa-arrow-pointer text-sm"></i> ${choose}
+              </button>
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+  };
+
+  window.openProductModal = function openProductModal(productId) {
+    const product = PRODUCTS_DATA.find(item => item.id === productId);
+    if (!product) return;
+
+    const lang = currentLanguage();
+    currentModalProductId = productId;
+    activeSelectedSize = null;
+
+    const mainImage = document.getElementById('modalMainImage');
+    mainImage.src = product.img1;
+    mainImage.className = 'absolute inset-0 w-full h-full object-cover transition duration-300';
+
+    document.getElementById('modalBadge').textContent = translated(product.tagLabel || product.brand);
+    document.getElementById('modalBrand').textContent = product.brand;
+    document.getElementById('modalGroundType').textContent = translated(product.pitch);
+    document.getElementById('modalTitle').textContent = product.name;
+    document.getElementById('modalDescription').textContent = translated(product.desc);
+    document.getElementById('modalCondition').textContent = translated(product.condition);
+
+    const oldPrice = document.getElementById('modalOldPrice');
+    const currentPrice = document.getElementById('modalCurrentPrice');
+    const installments = document.getElementById('modalInstallments');
+    if (oldPrice) oldPrice.textContent = '';
+    if (currentPrice) currentPrice.textContent = '';
+    if (installments) installments.textContent = '';
+
+    document.getElementById('modalThumbnails').innerHTML = `
+      <img src="${product.img1}" onclick="document.getElementById('modalMainImage').src='${product.img1}'" class="w-16 h-20 object-cover rounded-xl border-2 border-brand-lime cursor-pointer">
+      <img src="${product.img2}" onclick="document.getElementById('modalMainImage').src='${product.img2}'" class="w-16 h-20 object-cover rounded-xl border border-slate-200 cursor-pointer">`;
+
+    const sizeLabel = lang === 'en' ? 'Available size' : 'Numeração disponível';
+    document.getElementById('modalSizesGrid').innerHTML = sizeButtons(sizeLabel, AVAILABLE_SIZES);
+
+    document.getElementById('sizeWarningMsg').classList.add('hidden');
+    document.getElementById('productModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    if (typeof apply === 'function') apply(document.getElementById('productModal'));
+  };
+
+  window.openGeneralWhatsApp = function openGeneralWhatsApp() {
+    const lang = currentLanguage();
+    const message = lang === 'en'
+      ? 'Hello! I came from the Bold Storm website and would like help choosing football boots.'
+      : 'Olá! Vim pelo site da Bold Storm e gostaria de ajuda para escolher uma chuteira.';
+    window.open(formatWhatsAppUrl(message), '_blank');
+  };
+
+  window.openWhatsAppForProduct = function openWhatsAppForProduct(name, size) {
+    const lang = currentLanguage();
+    const message = lang === 'en'
+      ? `Hello! I would like more information about ${name}${size ? `, size ${size}` : ''}. Is this model available?`
+      : `Olá! Gostaria de saber mais sobre ${name}${size ? `, tamanho ${size}` : ''}. Este modelo está disponível?`;
+    window.open(formatWhatsAppUrl(message), '_blank');
+  };
+
+  window.triggerModalWhatsAppBuy = function triggerModalWhatsAppBuy() {
+    if (!activeSelectedSize) {
+      document.getElementById('sizeWarningMsg').classList.remove('hidden');
+      return;
+    }
+    const product = PRODUCTS_DATA.find(item => item.id === currentModalProductId);
+    if (!product) return;
+    const lang = currentLanguage();
+    const message = lang === 'en'
+      ? `Hello! I am interested in ${product.name}, ${activeSelectedSize}. Is this model available?`
+      : `Olá! Tenho interesse na ${product.name}, ${activeSelectedSize}. Este modelo está disponível?`;
+    window.open(formatWhatsAppUrl(message), '_blank');
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const notice = document.getElementById('currencyNotice');
+    if (notice) notice.remove();
+    const priceElements = ['modalOldPrice', 'modalCurrentPrice', 'modalInstallments'];
+    priceElements.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) element.textContent = '';
+    });
+    if (typeof currentProducts !== 'undefined' && !document.getElementById('productGrid')?.children.length) window.renderProductsGrid(currentProducts);
+  });
+})();
+</script>
+<script id="boldstorm-activate-pulsing-model-buttons">
+(() => {
+  const applyStormModelButtons = (root = document) => {
+    root.querySelectorAll?.('button').forEach(button => {
+      const label = (button.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+      if (label.includes('escolher modelo') || label.includes('choose model')) {
+        button.classList.add('storm-model-cta');
+      }
+    });
+  };
+  const start = () => {
+    applyStormModelButtons(document);
+    const observer = new MutationObserver(records => {
+      records.forEach(record => record.addedNodes.forEach(node => {
+        if (node.nodeType === 1) {
+          if (node.matches?.('button')) applyStormModelButtons(node.parentElement || document);
+          else applyStormModelButtons(node);
+        }
+      }));
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+</script>
+
+<script>
+window.openBestSellerWhatsApp = function(modelName) {
+    const isEnglish = (typeof window.getBoldStormLanguage === 'function' && window.getBoldStormLanguage() === 'en');
+    const message = isEnglish
+        ? `Hello! I saw the best seller ${modelName} on the Bold Storm website. Could you confirm availability, sizes and price?`
+        : `Olá! Vi a mais vendida ${modelName} no site da Bold Storm. Pode me confirmar disponibilidade, numerações e valor?`;
+    if (typeof formatWhatsAppUrl === 'function') {
+        window.open(formatWhatsAppUrl(message), '_blank');
+    } else if (typeof openGeneralWhatsApp === 'function') {
+        openGeneralWhatsApp();
+    }
+};
+</script>
+
+</body>
+</html>
